@@ -1,0 +1,483 @@
+{
+  "source_id": "openstax-python-2026-ch01-02",
+  "title": "Introduction to Python Programming",
+  "source_path_or_url": "Introduction_to_Python_Programming-WEB.pdf",
+  "source_url": "https://openstax.org/details/books/introduction-python-programming",
+  "license_or_permission": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "license_evidence_pdf_page": 4,
+  "attribution": "Access for free at openstax.org.",
+  "accessed_at": "2026-11-13",
+  "accessed_at_note": "Date the supplied local file was inspected; original download date unknown.",
+  "snapshot": {
+    "sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d",
+    "pdf_creation_date": "D:20260420121346-05'00'",
+    "copyright_year": 2026,
+    "total_physical_pages": 397
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Statements",
+      "physical_page_start": 17,
+      "physical_page_end": 46
+    },
+    {
+      "chapter": 2,
+      "title": "Expressions",
+      "physical_page_start": 47,
+      "physical_page_end": 76
+    }
+  ],
+  "counting_method": "Count physical PDF pages with content in chapters 1-2; exclude footer-only pages. Front matter, other chapters, answer key and index are outside the selection.",
+  "selected_page_count": 60,
+  "useful_page_count": 59,
+  "total_normalized_characters": 86077,
+  "excluded_pages": [
+    {
+      "page": 46,
+      "reason": "No content after removing running footer."
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-017",
+      "page": 17,
+      "book_page": 7,
+      "chapter": 1,
+      "char_count": 1200
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-018",
+      "page": 18,
+      "book_page": 8,
+      "chapter": 1,
+      "char_count": 1843
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-019",
+      "page": 19,
+      "book_page": 9,
+      "chapter": 1,
+      "char_count": 2117
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-020",
+      "page": 20,
+      "book_page": 10,
+      "chapter": 1,
+      "char_count": 1606
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-021",
+      "page": 21,
+      "book_page": 11,
+      "chapter": 1,
+      "char_count": 1443
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-022",
+      "page": 22,
+      "book_page": 12,
+      "chapter": 1,
+      "char_count": 1506
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-023",
+      "page": 23,
+      "book_page": 13,
+      "chapter": 1,
+      "char_count": 1400
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-024",
+      "page": 24,
+      "book_page": 14,
+      "chapter": 1,
+      "char_count": 1319
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-025",
+      "page": 25,
+      "book_page": 15,
+      "chapter": 1,
+      "char_count": 1334
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-026",
+      "page": 26,
+      "book_page": 16,
+      "chapter": 1,
+      "char_count": 1429
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-027",
+      "page": 27,
+      "book_page": 17,
+      "chapter": 1,
+      "char_count": 1172
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-028",
+      "page": 28,
+      "book_page": 18,
+      "chapter": 1,
+      "char_count": 1108
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-029",
+      "page": 29,
+      "book_page": 19,
+      "chapter": 1,
+      "char_count": 1304
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-030",
+      "page": 30,
+      "book_page": 20,
+      "chapter": 1,
+      "char_count": 1202
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-031",
+      "page": 31,
+      "book_page": 21,
+      "chapter": 1,
+      "char_count": 755
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-032",
+      "page": 32,
+      "book_page": 22,
+      "chapter": 1,
+      "char_count": 895
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-033",
+      "page": 33,
+      "book_page": 23,
+      "chapter": 1,
+      "char_count": 1766
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-034",
+      "page": 34,
+      "book_page": 24,
+      "chapter": 1,
+      "char_count": 1564
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-035",
+      "page": 35,
+      "book_page": 25,
+      "chapter": 1,
+      "char_count": 1510
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-036",
+      "page": 36,
+      "book_page": 26,
+      "chapter": 1,
+      "char_count": 1171
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-037",
+      "page": 37,
+      "book_page": 27,
+      "chapter": 1,
+      "char_count": 1517
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-038",
+      "page": 38,
+      "book_page": 28,
+      "chapter": 1,
+      "char_count": 1353
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-039",
+      "page": 39,
+      "book_page": 29,
+      "chapter": 1,
+      "char_count": 1833
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-040",
+      "page": 40,
+      "book_page": 30,
+      "chapter": 1,
+      "char_count": 2455
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-041",
+      "page": 41,
+      "book_page": 31,
+      "chapter": 1,
+      "char_count": 2343
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-042",
+      "page": 42,
+      "book_page": 32,
+      "chapter": 1,
+      "char_count": 621
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-043",
+      "page": 43,
+      "book_page": 33,
+      "chapter": 1,
+      "char_count": 1287
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-044",
+      "page": 44,
+      "book_page": 34,
+      "chapter": 1,
+      "char_count": 1132
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-045",
+      "page": 45,
+      "book_page": 35,
+      "chapter": 1,
+      "char_count": 1930
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-047",
+      "page": 47,
+      "book_page": 37,
+      "chapter": 2,
+      "char_count": 1499
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-048",
+      "page": 48,
+      "book_page": 38,
+      "chapter": 2,
+      "char_count": 2074
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-049",
+      "page": 49,
+      "book_page": 39,
+      "chapter": 2,
+      "char_count": 1380
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-050",
+      "page": 50,
+      "book_page": 40,
+      "chapter": 2,
+      "char_count": 1763
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-051",
+      "page": 51,
+      "book_page": 41,
+      "chapter": 2,
+      "char_count": 1242
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-052",
+      "page": 52,
+      "book_page": 42,
+      "chapter": 2,
+      "char_count": 1366
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-053",
+      "page": 53,
+      "book_page": 43,
+      "chapter": 2,
+      "char_count": 1564
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-054",
+      "page": 54,
+      "book_page": 44,
+      "chapter": 2,
+      "char_count": 1093
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-055",
+      "page": 55,
+      "book_page": 45,
+      "chapter": 2,
+      "char_count": 797
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-056",
+      "page": 56,
+      "book_page": 46,
+      "chapter": 2,
+      "char_count": 2029
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-057",
+      "page": 57,
+      "book_page": 47,
+      "chapter": 2,
+      "char_count": 1519
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-058",
+      "page": 58,
+      "book_page": 48,
+      "chapter": 2,
+      "char_count": 1250
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-059",
+      "page": 59,
+      "book_page": 49,
+      "chapter": 2,
+      "char_count": 1058
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-060",
+      "page": 60,
+      "book_page": 50,
+      "chapter": 2,
+      "char_count": 1664
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-061",
+      "page": 61,
+      "book_page": 51,
+      "chapter": 2,
+      "char_count": 1884
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-062",
+      "page": 62,
+      "book_page": 52,
+      "chapter": 2,
+      "char_count": 1779
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-063",
+      "page": 63,
+      "book_page": 53,
+      "chapter": 2,
+      "char_count": 1087
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-064",
+      "page": 64,
+      "book_page": 54,
+      "chapter": 2,
+      "char_count": 1107
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-065",
+      "page": 65,
+      "book_page": 55,
+      "chapter": 2,
+      "char_count": 1033
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-066",
+      "page": 66,
+      "book_page": 56,
+      "chapter": 2,
+      "char_count": 701
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-067",
+      "page": 67,
+      "book_page": 57,
+      "chapter": 2,
+      "char_count": 1808
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-068",
+      "page": 68,
+      "book_page": 58,
+      "chapter": 2,
+      "char_count": 1172
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-069",
+      "page": 69,
+      "book_page": 59,
+      "chapter": 2,
+      "char_count": 2060
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-070",
+      "page": 70,
+      "book_page": 60,
+      "chapter": 2,
+      "char_count": 1600
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-071",
+      "page": 71,
+      "book_page": 61,
+      "chapter": 2,
+      "char_count": 2196
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-072",
+      "page": 72,
+      "book_page": 62,
+      "chapter": 2,
+      "char_count": 2110
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-073",
+      "page": 73,
+      "book_page": 63,
+      "chapter": 2,
+      "char_count": 1588
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-074",
+      "page": 74,
+      "book_page": 64,
+      "chapter": 2,
+      "char_count": 1376
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-075",
+      "page": 75,
+      "book_page": 65,
+      "chapter": 2,
+      "char_count": 1754
+    },
+    {
+      "page_id": "openstax-python-2026-ch01-02:pdf-076",
+      "page": 76,
+      "book_page": 66,
+      "chapter": 2,
+      "char_count": 409
+    }
+  ],
+  "extraction": {
+    "library": "pypdf",
+    "version": "6.21.4",
+    "ocr_used": false,
+    "normalization": "Unicode NFC; LF newlines; NBSP to space; trim line endings; collapse extra blank lines; remove running footers; store attribution per page.",
+    "sample_checked_pdf_pages": [
+      17,
+      20,
+      24,
+      33,
+      39,
+      43,
+      46,
+      47,
+      57,
+      62,
+      73,
+      76
+    ],
+    "sample_check_method": "Read extracted text and compare chapter/page references with PDF contents/bookmarks; no visual PDF verification performed.",
+    "known_limitations": [
+      "Some mathematical expressions are absent from extracted text (observed on PDF page 57); verify evidence against the original PDF.",
+      "Tables and side-by-side code/output can lose layout; extracted code is reference text, not executable code.",
+      "Pages can contain the end of one section and the start of another; chapter metadata is used instead of assigning a single section."
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "embedding": {
+    "provider": "fastembed-local-onnx-cpu",
+    "model_name": "intfloat/multilingual-e5-small",
+    "model_file": "onnx/model.onnx",
+    "dimensions": 384,
+    "pooling": "mean",
+    "normalize": true,
+    "query_prefix": "query: ",
+    "document_prefix": "passage: ",
+    "max_tokens": 512,
+    "cache_dir": ".cache/fastembed",
+    "batch_size": 8,
+    "threads": 2
+  },
+  "strategies": {
+    "A": {"chunking": "fixed", "chunk_size": 500, "overlap": 50, "use_filter": false},
+    "B": {"chunking": "paragraph", "chunk_size": 1000, "overlap": 0, "use_filter": false},
+    "C": {"chunks_from": "B", "use_filter": true}
+  },
+  "vector_store": {
+    "backend": "qdrant-local",
+    "path": ".cache/qdrant",
+    "collection": "day06_python",
+    "distance": "cosine",
+    "search_mode": "exact"
+  }
+}

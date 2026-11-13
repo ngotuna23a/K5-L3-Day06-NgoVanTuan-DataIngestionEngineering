@@ -1,0 +1,120 @@
+{
+  "status": "complete",
+  "strategies": {
+    "A": {
+      "coherence": {
+        "reviewed": 10,
+        "total": 10,
+        "complete": true,
+        "mean": 1.0,
+        "counts": {
+          "1": 10
+        }
+      },
+      "metadata": {
+        "reviewed": 15,
+        "total": 15,
+        "complete": true,
+        "mean": 1.0,
+        "counts": {
+          "1": 15
+        }
+      },
+      "grounding": {
+        "reviewed": 5,
+        "total": 5,
+        "complete": true,
+        "mean": 1.4,
+        "counts": {
+          "1": 1,
+          "2": 3,
+          "0": 1
+        }
+      },
+      "filter_compliance": {
+        "passed": 0,
+        "total": 2,
+        "value": 0.0,
+        "complete": true
+      }
+    },
+    "B": {
+      "coherence": {
+        "reviewed": 10,
+        "total": 10,
+        "complete": true,
+        "mean": 0.9,
+        "counts": {
+          "0": 3,
+          "2": 2,
+          "1": 5
+        }
+      },
+      "metadata": {
+        "reviewed": 15,
+        "total": 15,
+        "complete": true,
+        "mean": 1.0,
+        "counts": {
+          "1": 15
+        }
+      },
+      "grounding": {
+        "reviewed": 5,
+        "total": 5,
+        "complete": true,
+        "mean": 1.2,
+        "counts": {
+          "0": 2,
+          "2": 3
+        }
+      },
+      "filter_compliance": {
+        "passed": 0,
+        "total": 2,
+        "value": 0.0,
+        "complete": true
+      }
+    },
+    "C": {
+      "coherence": {
+        "reviewed": 10,
+        "total": 10,
+        "complete": true,
+        "mean": 0.9,
+        "counts": {
+          "0": 3,
+          "2": 2,
+          "1": 5
+        }
+      },
+      "metadata": {
+        "reviewed": 15,
+        "total": 15,
+        "complete": true,
+        "mean": 1.0,
+        "counts": {
+          "1": 15
+        }
+      },
+      "grounding": {
+        "reviewed": 5,
+        "total": 5,
+        "complete": true,
+        "mean": 1.4,
+        "counts": {
+          "0": 1,
+          "2": 3,
+          "1": 1
+        }
+      },
+      "filter_compliance": {
+        "passed": 2,
+        "total": 2,
+        "value": 1.0,
+        "complete": true
+      }
+    }
+  },
+  "note": "Only explicit score/metadata_ok with reason and reviewer counts as reviewed. Proposed AI labels and automatic matches never become manual labels automatically."
+}

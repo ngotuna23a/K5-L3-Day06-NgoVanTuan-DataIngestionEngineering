@@ -1,65 +1,73 @@
-# Starter · PostgreSQL + pgvector
+# Bài làm Day 06 — Qdrant Local + FastEmbed
 
-Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
+Ngô Văn Tuân · MSSV **2A202603630** · Lớp **L3A**.
 
-## Cấu trúc
+Bài làm dùng Python 3.13.9, Qdrant Local và embedding `intfloat/multilingual-e5-small` chạy CPU, 384 chiều, cosine exact search. Không cần Docker hoặc API key. Các file PostgreSQL trong bộ starter gốc không được dùng cho phương án này.
 
-```text
-starter/
-├── docker-compose.yml     # PostgreSQL 16 + pgvector, chỉ mở cổng local
-├── init.sql               # bật extension khi tạo database mới
-├── requirements.txt       # psycopg, pypdf và python-dotenv
-├── .env.example           # cấu hình mẫu; copy thành .env
-├── scripts/check_setup.py # kiểm tra kết nối và extension (đã chạy được)
-├── src/
-│   ├── models.py          # cấu trúc dữ liệu mẫu
-│   ├── ingestion.py       # TODO: đọc / chuẩn hóa tài liệu
-│   ├── chunking.py        # TODO: chia chunk
-│   ├── embeddings.py      # TODO: chọn model API hoặc local
-│   ├── store.py           # TODO: lưu vector, metadata và filter
-│   ├── evaluation.py      # TODO: chấm truy xuất, lưu trace
-│   └── run.py             # TODO: kết nối các bước thành pipeline
-├── data/                  # bạn tự chuẩn bị corpus được phép sử dụng
-└── results/               # lưu kết quả của bạn
+## Dữ liệu và kết quả đã nộp
+
+- PDF gốc ở thư mục root; corpus 59 trang và nguồn/license trong `data/manifest.json`, `data/pages.jsonl`.
+- 20 câu hỏi, chia trước 15 dev / 5 test: `benchmark/questions.json`; quy tắc và vị trí audit: `benchmark/protocol.json`.
+- Cấu hình: `starter/config.json`. A: 500 ký tự, overlap 50; B: heading/đoạn tối đa 1.000 ký tự; C dùng cùng chunk/vector với B và thêm filter theo input.
+- `results/`: chunks, trace top-3, chỉ số dev/test, lựa chọn trên dev và 90 nhãn audit đã được học viên xem/xác nhận.
+- Báo cáo: `report/individual/2A202603630_NgoVanTuan.md`.
+- Model/database cache ở `.cache/`, môi trường ở `starter/.venv/`; Git bỏ qua các thư mục này.
+
+## Cài môi trường
+
+Chạy PowerShell từ thư mục gốc của repo. Thư viện đã được kiểm tra trên Windows/Python 3.13; lần tải model cần khoảng 490 MB cho trọng số và tokenizer.
+
+```powershell
+python -m venv starter/.venv
+& .\starter\.venv\Scripts\python.exe -m pip install -r starter/requirements-local.lock.txt
+& .\starter\.venv\Scripts\python.exe starter/scripts/download_model.py
+& .\starter\.venv\Scripts\python.exe -m starter.src.check_local_setup
 ```
 
-## 1. Cài và kiểm tra database
+Script download giữ đúng snapshot `614241f622f53c4eeff9890bdc4f31cfecc418b3`, kiểm tra SHA-256 trong `artifacts/local_setup.json` và cấu hình cache để FastEmbed đọc offline. Kiểm tra cache đã có bằng cách thêm `--offline` vào lệnh download.
 
-Cần Docker Desktop hoặc Docker Engine + Compose, Python **3.11–3.14**, và mạng để tải image/dependencies lần đầu. Các lệnh sau chạy từ thư mục `starter/`:
+## Tái lập thí nghiệm
 
-```bash
-cd starter
-python3 -m venv .venv
+Thực hiện trên **bản clone riêng** để giữ bộ kết quả bài nộp. Trước khi chạy lại, dùng Explorer đổi tên thư mục `results` của bản clone thành `results_submitted`; các lệnh dưới sẽ tạo bộ `results` mới.
+
+```powershell
+& .\starter\.venv\Scripts\python.exe -m starter.src.prepare_corpus
+& .\starter\.venv\Scripts\python.exe -m starter.src.validate_benchmark
+& .\starter\.venv\Scripts\python.exe -m starter.src.run --stage ingest
+& .\starter\.venv\Scripts\python.exe -m starter.src.run --stage verify
+& .\starter\.venv\Scripts\python.exe -m starter.src.run --stage benchmark --split dev
+& .\starter\.venv\Scripts\python.exe -m starter.src.run --stage benchmark --split test
 ```
 
-Kích hoạt `.venv`: macOS/Linux dùng `source .venv/bin/activate`; Windows PowerShell dùng `.venv\Scripts\Activate.ps1`. Sau đó:
+Kỳ vọng: 59 trang; A = 212 chunk, B/C = 240 chunk; vector B/C khớp trong độ chính xác float32. Nạp lại cùng corpus không tạo bản ghi trùng; chunk cũ của các tài liệu trong batch được thay sau khi ghi thành công.
 
-```bash
-python -m pip install -r requirements.txt
-# macOS/Linux: cp .env.example .env
-# Windows PowerShell: Copy-Item .env.example .env
-docker compose -p day6_student_starter up -d --wait
-python scripts/check_setup.py
+Benchmark tạo 45 trace dev và 15 trace test. Chọn cấu hình trên dev, cố định snapshot rồi mới chạy test. CLI giữ bộ test đã chạy; không chỉnh cấu hình theo test. Thời gian ingest và thứ tự tiebreak có thể khác theo máy, đặc biệt khi B/C đồng điểm. Bộ bài nộp hiện tại chọn B.
+
+Các kết quả tự động đã đo:
+
+| Cấu hình | Dev Hit@1 | Dev Hit@3 | Test Hit@1 | Test Hit@3 |
+|---|---:|---:|---:|---:|
+| A | 3/15 | 5/15 | 3/5 | 3/5 |
+| B | 7/15 | 10/15 | 2/5 | 3/5 |
+| C | 7/15 | 10/15 | 2/5 | 3/5 |
+
+Hit yêu cầu đúng nguồn/trang và đủ evidence chính hoặc alternative; so khớp tự động chuẩn hóa Unicode/khoảng trắng. Grounding/coherence dùng nhãn riêng, không suy từ Hit@3.
+
+## Audit và kiểm tra
+
+Tổng hợp lại các CSV audit đã nộp, không cần tải model hoặc mở database:
+
+```powershell
+& .\starter\.venv\Scripts\python.exe -m starter.src.audit --stage summarize
+& .\starter\.venv\Scripts\python.exe -m unittest discover -s starter/tests -v
 ```
 
-Kỳ vọng: hiện tên database, phiên bản PostgreSQL và pgvector, sau đó `Setup OK`. Đây **chỉ là kiểm tra hạ tầng**, không phải kết quả benchmark. Docker dùng cổng `127.0.0.1:55433` và mật khẩu cố định **chỉ dùng local cho lab**; nếu cổng bận, sửa đồng thời port trong `docker-compose.yml` và `DATABASE_URL` trong `.env`. `init.sql` chỉ chạy khi volume mới được tạo; nếu database sẵn có chưa bật extension, xem log Docker và kiểm tra cấu hình thay vì xóa volume chứa dữ liệu.
+Bộ hiện tại có 34 tests. Qdrant Client 1.20.0 có thể in `ResourceWarning` từ kết nối SQLite tạm khi chạy unit test trên Python 3.13; các test vẫn đạt.
 
-Dừng container nhưng giữ dữ liệu:
+Nếu tạo bộ audit mới trong bản tái lập, chạy `python -m starter.src.audit --stage prepare`, sau đó điền `score` hoặc `metadata_ok`, `reason`, `reviewer` rồi summarize. Các đề xuất và kiểm tra tự động không được tự coi là nhãn đã xác nhận. Mỗi cấu hình cần 10 mẫu coherence, 15 bản ghi metadata và 5 mẫu grounding; mẫu được chọn trước trong protocol.
 
-```bash
-docker compose -p day6_student_starter stop
-```
+Lỗi runtime của entry point được ghi vào `results/ingestion_errors.jsonl` khi có lỗi. Model/backend lỗi sẽ được báo rõ, không thay bằng vector giả.
 
-## 2. Chọn embedding model
+## Chốt bài
 
-Điền key tương ứng trong `.env` nếu dùng OpenRouter, OpenAI hoặc Gemini; **không commit `.env`**. Model local không cần API key. `requirements.txt` chỉ có dependencies cơ bản: tự cài SDK hoặc thư viện local phù hợp với model bạn chọn và ghi lại version/lệnh cài trong báo cáo. Ghi tên model và số chiều; dùng cùng model cho toàn bộ chiến lược và vector query tương thích vector document.
-
-## 3. Hoàn thiện pipeline
-
-1. Đặt corpus vào `data/` hoặc cung cấp manifest/hướng dẫn truy cập. Đọc [GUIDE.md](../GUIDE.md) về **30 trang nội dung**, quyền dữ liệu và metadata.
-2. Hoàn thiện từng hàm TODO trong `src/`. Lưu ID tài liệu, nguồn, trang/vị trí và ít nhất một trường filter có ích.
-3. Xây ít nhất ba cấu hình; ví dụ A fixed-size, B theo đoạn, C như B nhưng có filter. Cần cùng corpus, model và benchmark; nạp lại không nhân đôi và xử lý chunk cũ khi dữ liệu đổi.
-4. Tự viết ít nhất 20 câu hỏi kèm evidence, tách dev/test trước khi thử theo [BENCHMARK.md](../BENCHMARK.md). Lưu trace top-3 và báo cáo đủ năm tiêu chí.
-5. Sau khi hoàn thiện, chạy `python -m src.run` từ thư mục `starter/`. Trước khi làm TODO, lệnh này **chủ động báo `NotImplementedError`**.
-
-Lưu code, cấu hình, kết quả và lệnh chạy để người chấm tái lập; không commit key, dữ liệu mật hoặc dữ liệu không có quyền chia sẻ.
+Thông tin học viên trong `STUDENT.md` dùng tag `day06-2A202603630` làm mốc commit bài nộp. Tạo tag sau commit cuối và push cả branch `main` lẫn tag; nộp link repo theo kênh giảng viên chỉ định. Thời hạn và quy ước tên repo theo thông báo lớp.

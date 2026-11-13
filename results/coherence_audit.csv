@@ -1,0 +1,1184 @@
+﻿sample_id,strategy,document_id,source,page,character_offset,chunk_id,chunk_text,source_page_text,proposed_score,proposed_reason,proposed_by,score,reason,reviewer,attribution,license,reviewer_id,review_confirmation,confirmation_recorded_at
+coh-01-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,17,0,openstax-python-2026-ch01-02:p17:e593a2ca9bbc940d26d7,"Figure 1.1 credit: Larissa Chu, CC BY 4.0
+Chapter Outline
+1.1 Background
+1.2 Input/output
+1.3 Variables
+1.4 String basics
+1.5 Number basics
+1.6 Error messages
+1.7 Comments
+1.8 Why Python?
+1.9 Chapter summary
+Introduction
+Computers and programs are everywhere in today's world. Programs affect many aspects of daily life and
+society as a whole. People depend on programs for communication, shopping, entertainment, health care, and
+countless other needs. Learning how to program computers opens the do","Figure 1.1 credit: Larissa Chu, CC BY 4.0
+Chapter Outline
+1.1 Background
+1.2 Input/output
+1.3 Variables
+1.4 String basics
+1.5 Number basics
+1.6 Error messages
+1.7 Comments
+1.8 Why Python?
+1.9 Chapter summary
+Introduction
+Computers and programs are everywhere in today's world. Programs affect many aspects of daily life and
+society as a whole. People depend on programs for communication, shopping, entertainment, health care, and
+countless other needs. Learning how to program computers opens the door to many careers and
+opportunities for building a better world.
+Programs consist of statements to be run one after the other. A statement describes some action to be
+carried out.
+The statement print(""Good morning"") instructs Python to output the message ""Good morning"" to the
+user. The statement count = 0 instructs Python to assign the integer 0 to the variable count.
+This chapter introduces statements for input and output, assigning variables, and basic arithmetic. Making
+mistakes is a normal part of programming, and the chapter includes advice on understanding error messages.
+The chapter ends with a short history of Python and discusses why Python has become so popular today.
+Statements
+1",1,"Có outline và phần giới thiệu, nhưng câu cuối bị cắt giữa từ, chưa giữ trọn ý.",Codex_AI_text_review,1,"Có outline và phần giới thiệu, nhưng câu cuối bị cắt giữa từ, chưa giữ trọn ý.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-02-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,18,0,openstax-python-2026-ch01-02:p18:6136842320a4ea14a0c6,"1.1 Background
+Learning Objectives
+By the end of this section you should be able to
+• Name two examples of computer programs in everyday life.
+• Explain why Python is a good programming language to learn.
+Computer programs
+A computer is an electronic device that stores and processes information. Examples of computers include
+smartphones, tablets, laptops, desktops, and servers. Technically, a program is a sequence of instructions that
+a computer can run. Programs help people accomplish everyday ","1.1 Background
+Learning Objectives
+By the end of this section you should be able to
+• Name two examples of computer programs in everyday life.
+• Explain why Python is a good programming language to learn.
+Computer programs
+A computer is an electronic device that stores and processes information. Examples of computers include
+smartphones, tablets, laptops, desktops, and servers. Technically, a program is a sequence of instructions that
+a computer can run. Programs help people accomplish everyday tasks, create new technology, and have fun.
+The goal of this book is to teach introductory programming and problem solving. Writing programs is a
+creative activity, inherently useful, and rewarding! No prior background in computer science is necessary to
+read this book. Many different types of programs exist, as shown in the illustration below. This book will focus
+on general purpose programs that typically run ""behind the scenes.""
+CHECKPOINT
+Online music streaming
+Online music streaming; ch 1, video 1 (https://www.openstax.org/r/music-streaming)
+CONCEPTS IN PRACTICE
+Computers and programs
+1 . How many types of programs were described in the animation?
+a. 3
+b. 4
+c. 5
+2 . What type of program will this book explain how to write?
+a. a tool that summarizes an individual's music preferences
+b. a mobile app for managing and sharing playlists of songs
+c. a website that shows the top artists for the past five years
+3 . Which of the following devices is an example of a computer?
+a. wired headphones that plug into a smartphone
+b. remote control that pauses or skips the current song
+c. wi-fi speaker that streams music from Amazon
+4 . Reading this book requires a strong background in mathematics.
+a. true
+b. false
+EXPLORING FURTHER
+Later chapters of this book show how to write analysis programs using real data. Example libraries that",1,Giữ được mục tiêu học và định nghĩa computer/program; câu cuối dừng giữa ý về tác vụ hằng ngày.,Codex_AI_text_review,1,Giữ được mục tiêu học và định nghĩa computer/program; câu cuối dừng giữa ý về tác vụ hằng ngày.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-03-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,19,0,openstax-python-2026-ch01-02:p19:40a05f204e437e41c0d5,"provide access to online streaming services include Spotipy (https://openstax.org/r/100spotipy), Pytube
+(https://openstax.org/r/100pytube), and Pydora (https://openstax.org/r/100pydora). Python-related tools
+often have the letters ""py"" in their name.
+The Python language
+This book introduces Python (https://openstax.org/r/100python), one of the top programming languages
+today. Leading tech giants like Google, Apple, NASA, Instagram, Pixar, and others use Python extensively.
+One reason why Python ","provide access to online streaming services include Spotipy (https://openstax.org/r/100spotipy), Pytube
+(https://openstax.org/r/100pytube), and Pydora (https://openstax.org/r/100pydora). Python-related tools
+often have the letters ""py"" in their name.
+The Python language
+This book introduces Python (https://openstax.org/r/100python), one of the top programming languages
+today. Leading tech giants like Google, Apple, NASA, Instagram, Pixar, and others use Python extensively.
+One reason why Python is popular is because many libraries exist for doing real work. A library is a collection
+of code that can be used in other programs. Python comes with an extensive Standard Library
+(https://openstax.org/r/100pythlibrary) for solving everyday computing problems like extracting data from files
+and creating summary reports. In addition, the community develops many other libraries for Python. Ex:
+Pandas (https://openstax.org/r/100pandas) is a widely used library for data analysis.
+Another reason why Python is popular is because the syntax is concise and straightforward. The syntax of a
+language defines how code must be structured. Syntax rules define the keywords, symbols, and formatting
+used in programs. Compared to other programming languages, Python is more concise and straightforward.
+EXAMPLE 1.1
+Hello world in Python and Java
+By tradition, Hello World (https://openstax.org/r/100helloworld) is the first program to write when learning
+a new language. This program simply displays the message ""Hello, World!"" to the user. The hello world
+program is only one line in Python:
+print(""Hello, World!"")
+In contrast, the hello world program is five lines in Java (a different language).
+public class Hello {
+  public static void main(String[] args) {
+   System.out.println(""Hello, World!"");
+  }
+}
+However, conciseness is not the only consideration for which language is used. In different situations
+different languages may be more appropriate. Ex: Java is often used in Android development.
+CHECKPOINT
+Counting lines in a file
+Counting lines in a file; ch 1, video 2 (https://www.openstax.org/r/counting-lines)",1,Đầu trang là phần nối thiếu chủ thể; đoạn sau có ý nghĩa nhưng cuối chunk tiếp tục bị cắt.,Codex_AI_text_review,1,Đầu trang là phần nối thiếu chủ thể; đoạn sau có ý nghĩa nhưng cuối chunk tiếp tục bị cắt.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-04-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,20,0,openstax-python-2026-ch01-02:p20:590b1b32f2516dc90904,"CONCEPTS IN PRACTICE
+Python vs Java syntax
+5 . In general, Python programs are _____ than Java programs.
+a. faster
+b. longer
+c. shorter
+6 . In the example programs above, what syntax required by Java is not required by Python?
+a. semicolons
+b. parentheses
+c. quote marks
+Favorite song
+The program below asks for your name and displays a friendly greeting. Run the program and see what
+happens. In the error message, EOF stands for End of File.
+• Many of the programs in this chapter expect input from","CONCEPTS IN PRACTICE
+Python vs Java syntax
+5 . In general, Python programs are _____ than Java programs.
+a. faster
+b. longer
+c. shorter
+6 . In the example programs above, what syntax required by Java is not required by Python?
+a. semicolons
+b. parentheses
+c. quote marks
+Favorite song
+The program below asks for your name and displays a friendly greeting. Run the program and see what
+happens. In the error message, EOF stands for End of File.
+• Many of the programs in this chapter expect input from the user. Enter your name in the Input box
+below the code. Run the program again, and see what changes.
+• Copy the following lines to the end of the program:
+song = input()
+print(""Cool! I like"", song, ""too."")
+print(""What is your favorite song?"") song = input() print(""Cool! I like"", song,
+""too."")
+• The modified program reads two lines of input: name and song. Add your favorite song to the Input
+box below your name, and run the program again.
+The next section of the book will explain how print() and input() work. Feel free to experiment with this
+code until you are ready to move on.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-1-background)
+1.2 Input/output
+Learning objectives
+By the end of this section you should be able to
+• Display output using the print() function.
+• Obtain user input using the input() function.
+Basic output
+The print() function displays output to the user. Output is the information or result produced by a program.
+The sep and end options can be used to customize the output. Table 1.1 shows examples of sep and end.
+TRY IT",1,Có câu hỏi tham chiếu ví dụ nằm ngoài chunk; phần Favorite song và hướng dẫn cuối cũng chưa đầy đủ.,Codex_AI_text_review,1,Có câu hỏi tham chiếu ví dụ nằm ngoài chunk; phần Favorite song và hướng dẫn cuối cũng chưa đầy đủ.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-05-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,21,0,openstax-python-2026-ch01-02:p21:e658a204bdf5f6adc077,"Multiple values, separated by commas, can be printed in the same statement. By default, each value is
+separated by a space character in the output. The sep option can be used to change this behavior.
+By default, the print() function adds a newline character at the end of the output. A newline character tells
+the display to move to the next line. The end option can be used to continue printing on the same line.
+Code Output
+print(""Today is Monday."")
+print(""I like string beans."")
+Today is Monday.
+I","Multiple values, separated by commas, can be printed in the same statement. By default, each value is
+separated by a space character in the output. The sep option can be used to change this behavior.
+By default, the print() function adds a newline character at the end of the output. A newline character tells
+the display to move to the next line. The end option can be used to continue printing on the same line.
+Code Output
+print(""Today is Monday."")
+print(""I like string beans."")
+Today is Monday.
+I like string beans.
+print(""Today"", ""is"", ""Monday"")
+print(""Today"", ""is"", ""Monday"", sep=""..."")
+Today is Monday
+Today...is...Monday
+print(""Today is Monday, "", end="""")
+print(""I like string beans."")
+Today is Monday, I like string
+beans.
+print(""Today"", ""is"", ""Monday"", sep=""? "",
+end=""!!"")
+print(""I like string beans."")
+Today? is? Monday!!I like string
+beans.
+Table 1.1 Example uses of print().
+CHECKPOINT
+Displaying output to the user
+1 3 1 Displaying output to the user (https://www.openstax.org/r/displaying-output)
+CONCEPTS IN PRACTICE
+The print() function
+1 . Which line of code prints Hello world! as one line of output?
+a. print(Hello world!)
+b. print(""Hello"", ""world"", ""!"")
+c. print(""Hello world!"")
+2 . Which lines of code prints Hello world! as one line of output?
+a. print(""Hello"")
+print("" world!"")
+b. print(""Hello"")
+print("" world!"", end="""")
+c. print(""Hello"", end="""")
+print("" world!"")
+3 . What output is produced by the following statement?",1,"Giải thích sep/end đủ ý, nhưng ví dụ print/output cuối chunk bị cắt giữa bảng.",Codex_AI_text_review,1,"Giải thích sep/end đủ ý, nhưng ví dụ print/output cuối chunk bị cắt giữa bảng.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-06-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,22,0,openstax-python-2026-ch01-02:p22:bb9e740e36e6a811dcdc,"print(""555"", ""0123"", sep=""-"")
+a. 555 0123
+b. 5550123-
+c. 555-0123
+DO SPACES REALLY MATTER?
+Spaces and newline characters are not inherently important. However, learning to be precise is an essential
+skill for programming. Noticing little details, like how words are separated and how lines end, helps new
+programmers become better.
+Basic input
+Computer programs often receive input from the user. Input is what a user enters into a program. An input
+statement, variable = input(""prompt""), has three p","print(""555"", ""0123"", sep=""-"")
+a. 555 0123
+b. 5550123-
+c. 555-0123
+DO SPACES REALLY MATTER?
+Spaces and newline characters are not inherently important. However, learning to be precise is an essential
+skill for programming. Noticing little details, like how words are separated and how lines end, helps new
+programmers become better.
+Basic input
+Computer programs often receive input from the user. Input is what a user enters into a program. An input
+statement, variable = input(""prompt""), has three parts:
+1. A variable refers to a value stored in memory. In the statement above, variable can be replaced with any
+name the programmer chooses.
+2. The input() function reads one line of input from the user. A function is a named, reusable block of code
+that performs a task when called. The input is stored in the computer's memory and can be accessed later
+using the variable.
+3. A prompt is a short message that indicates the program is waiting for input. In the statement above,
+""prompt"" can be omitted or replaced with any message.
+CHECKPOINT
+Obtaining input from the user
+Displaying output to the user; ch 1, video 3 (https://www.openstax.org/r/obtaining-input)
+CONCEPTS IN PRACTICE
+The input() function
+4 . Which line of code correctly obtains and stores user input?
+a. input()
+b. today_is = input
+c. today_is = input()
+5 . Someone named Sophia enters their name when prompted with
+print(""Please enter your name: "")
+name = input()
+What is displayed by print(""You entered:"", name)?
+a. You entered: name",1,"Có phần giải thích spaces/newlines, nhưng đầu là lựa chọn rời và phần Basic input bị cắt giữa từ.",Codex_AI_text_review,1,"Có phần giải thích spaces/newlines, nhưng đầu là lựa chọn rời và phần Basic input bị cắt giữa từ.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-07-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,23,0,openstax-python-2026-ch01-02:p23:d7760bffdb7cbf3a7803,"b. You entered: Sophia
+c. You entered:, Sophia
+6 . What is the output if the user enters ""six"" as the input?
+print(""Please enter a number: "")
+number = input()
+print(""Value ="", number)
+a. Value = six
+b. Value = 6
+c. Value = number
+Frost poem
+Write a program that uses multiple print() statements to output the following poem by Robert Frost
+(https://openstax.org/r/100robertfrost). Each print() statement should correspond to one line of output.
+Tip: You don't need to write the entire program all at ","b. You entered: Sophia
+c. You entered:, Sophia
+6 . What is the output if the user enters ""six"" as the input?
+print(""Please enter a number: "")
+number = input()
+print(""Value ="", number)
+a. Value = six
+b. Value = 6
+c. Value = number
+Frost poem
+Write a program that uses multiple print() statements to output the following poem by Robert Frost
+(https://openstax.org/r/100robertfrost). Each print() statement should correspond to one line of output.
+Tip: You don't need to write the entire program all at once. Try writing the first print() statement, and
+then click the Run button. Then write the next print() statement, and click the Run button again.
+Continue writing and testing the code incrementally until you finish the program.
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I--
+I took the one less traveled by,
+And that has made all the difference.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-2-input-
+output)
+Name and likes
+Write a program that asks the following two questions (example input in bold):
+What is your name? Shakira
+What do you like? singing
+Output a blank line after reading the input. Then output the following message based on the input:
+Shakira likes singing
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-2-input-
+TRY IT
+TRY IT",1,"Đầu có đáp án không kèm câu hỏi trước; câu 6 hiểu được, phần bài tập tiếp theo bị cắt.",Codex_AI_text_review,1,"Đầu có đáp án không kèm câu hỏi trước; câu 6 hiểu được, phần bài tập tiếp theo bị cắt.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-08-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,24,0,openstax-python-2026-ch01-02:p24:9c7078e0f3c8ea125754,"output)
+1.3 Variables
+Learning objectives
+By the end of this section you should be able to
+• Assign variables and print variables.
+• Explain rules for naming variables.
+Assignment statement
+Variables allow programs to refer to values using names rather than memory locations. Ex: age refers to a
+person's age, and birth refers to a person's date of birth.
+A statement can set a variable to a value using the assignment operator (=). Note that this is different from
+the equal sign of mathematics. Ex:","output)
+1.3 Variables
+Learning objectives
+By the end of this section you should be able to
+• Assign variables and print variables.
+• Explain rules for naming variables.
+Assignment statement
+Variables allow programs to refer to values using names rather than memory locations. Ex: age refers to a
+person's age, and birth refers to a person's date of birth.
+A statement can set a variable to a value using the assignment operator (=). Note that this is different from
+the equal sign of mathematics. Ex: age = 6 or birth = ""May 15"". The left side of the assignment statement
+is a variable, and the right side is the value the variable is assigned.
+CHECKPOINT
+Assigning and using variables
+Assigning and using variables; ch 1, video 5 (https://www.openstax.org/r/using-variables)
+CONCEPTS IN PRACTICE
+Assigning and using variables
+1 . Which line of code correctly retrieves the value of the variable, city, after the following assignment?
+city = ""Chicago""
+a. print(""In which city do you live?"")
+b. city = ""London""
+c. print(""The city where you live is"", city)
+2 . Which program stores and retrieves a variable correctly?
+a. print(""Total ="", total)
+total = 6
+b. total = 6
+print(""Total ="", total)
+c. print(""Total ="", total)
+total = input()
+3 . Which is the assignment operator?
+a. :
+b. ==
+c. =
+4 . Which is a valid assignment?",1,"Lẫn đoạn output) từ trang trước; phần phép gán chỉ đến Ex:, thiếu ví dụ và giải thích hai vế.",Codex_AI_text_review,1,"Lẫn đoạn output) từ trang trước; phần phép gán chỉ đến Ex:, thiếu ví dụ và giải thích hai vế.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-09-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,25,0,openstax-python-2026-ch01-02:p25:576d9b65e0340014e230,"a. temperature = 98.5
+b. 98.5 = temperature
+c. temperature - 23.2
+Variable naming rules
+A variable name can consist of letters, digits, and underscores and be of any length. The name cannot start
+with a digit. Ex: 101class is invalid. Also, letter case matters. Ex: Total is different from total. Python's style
+guide recommends writing variable names in snake case, which is all lowercase with underscores in between
+each word, such as first_name or total_price.
+A name should be short and descripti","a. temperature = 98.5
+b. 98.5 = temperature
+c. temperature - 23.2
+Variable naming rules
+A variable name can consist of letters, digits, and underscores and be of any length. The name cannot start
+with a digit. Ex: 101class is invalid. Also, letter case matters. Ex: Total is different from total. Python's style
+guide recommends writing variable names in snake case, which is all lowercase with underscores in between
+each word, such as first_name or total_price.
+A name should be short and descriptive, so words are preferred over single characters in programs for
+readability. Ex: A variable named count indicates the variable's purpose better than a variable named c.
+Python has reserved words, known as keywords, which have special functions and cannot be used as names
+for variables (or other objects).
+False await else import pass
+None break except in raise
+True class finally is return
+and continue for lambda try
+as def from nonlocal while
+assert del global not with
+asynch elif if or yield
+Table 1.2 Keywords
+CONCEPTS IN PRACTICE
+Valid variable names
+5 . Which can be used as a variable name?
+a. median
+b. class
+c. import
+6 . Why is the name, 2nd_input, not a valid variable name?
+a. contains an underscore
+b. starts with a digit
+c. is a keyword
+7 . Which would be a good name for a variable storing a zip code?
+a. z
+b. var_2",1,Quy tắc đặt tên biến hiểu được một phần; đầu là lựa chọn rời và cuối cắt giữa từ descriptive.,Codex_AI_text_review,1,Quy tắc đặt tên biến hiểu được một phần; đầu là lựa chọn rời và cuối cắt giữa từ descriptive.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-10-A,A,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,26,0,openstax-python-2026-ch01-02:p26:5461d4bce154c53881bf,"c. zip_code
+8 . Given the variable name, DogBreed, which improvement conforms to Python's style guide?
+a. dog_breed
+b. dogBreed
+c. dog-breed
+Final score
+Write a Python computer program that:
+• Creates a variable, team1, assigned with the value ""Liverpool"".
+• Creates a variable, team2, assigned with the value ""Chelsea"".
+• Creates a variable score1, assigned with the value 4.
+• Creates a variable, score2, assigned with the value 3.
+• Prints team1, ""versus"", and team2 as a single line of output.
+• ","c. zip_code
+8 . Given the variable name, DogBreed, which improvement conforms to Python's style guide?
+a. dog_breed
+b. dogBreed
+c. dog-breed
+Final score
+Write a Python computer program that:
+• Creates a variable, team1, assigned with the value ""Liverpool"".
+• Creates a variable, team2, assigned with the value ""Chelsea"".
+• Creates a variable score1, assigned with the value 4.
+• Creates a variable, score2, assigned with the value 3.
+• Prints team1, ""versus"", and team2 as a single line of output.
+• Prints ""Final score: "", score1, ""to"", score2 as a single line of output.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-3-variables)
+1.4 String basics
+Learning objectives
+By the end of this section you should be able to
+• Use the built-in len() function to get a string's length.
+• Concatenate string literals and variables using the + operator.
+Quote marks
+A string is a sequence of characters enclosed by matching single (') or double ("") quotes. Ex: ""Happy
+birthday!"" and '21' are both strings.
+To include a single quote (') in a string, enclose the string with matching double quotes (""). Ex: ""Won't this
+work?"" To include a double quote (""), enclose the string with matching single quotes ('). Ex: 'They said ""Try
+it!"", so I did'.
+Valid string Invalid string
+""17"" or '17' 17
+""seventeen"" or 'seventeen' seventeen
+""Where?"" or 'Where?' ""Where?'
+Table 1.3 Rules for strings.
+TRY IT",1,"Có yêu cầu bài Final score nhưng đầu lẫn lựa chọn cũ, danh sách yêu cầu kết thúc bằng bullet trống.",Codex_AI_text_review,1,"Có yêu cầu bài Final score nhưng đầu lẫn lựa chọn cũ, danh sách yêu cầu kết thúc bằng bullet trống.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-01-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,17,0,openstax-python-2026-ch01-02:p17:3fe0b6e24870ed66aa93,"Figure 1.1 credit: Larissa Chu, CC BY 4.0
+","Figure 1.1 credit: Larissa Chu, CC BY 4.0
+Chapter Outline
+1.1 Background
+1.2 Input/output
+1.3 Variables
+1.4 String basics
+1.5 Number basics
+1.6 Error messages
+1.7 Comments
+1.8 Why Python?
+1.9 Chapter summary
+Introduction
+Computers and programs are everywhere in today's world. Programs affect many aspects of daily life and
+society as a whole. People depend on programs for communication, shopping, entertainment, health care, and
+countless other needs. Learning how to program computers opens the door to many careers and
+opportunities for building a better world.
+Programs consist of statements to be run one after the other. A statement describes some action to be
+carried out.
+The statement print(""Good morning"") instructs Python to output the message ""Good morning"" to the
+user. The statement count = 0 instructs Python to assign the integer 0 to the variable count.
+This chapter introduces statements for input and output, assigning variables, and basic arithmetic. Making
+mistakes is a normal part of programming, and the chapter includes advice on understanding error messages.
+The chapter ends with a short history of Python and discusses why Python has become so popular today.
+Statements
+1",0,Chỉ có credit của Figure 1.1; không có hình hoặc nội dung để hiểu ý chính.,Codex_AI_text_review,0,Chỉ có credit của Figure 1.1; không có hình hoặc nội dung để hiểu ý chính.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-02-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,18,0,openstax-python-2026-ch01-02:p18:957421c19c5ea7957985,"1.1 Background
+Learning Objectives
+By the end of this section you should be able to
+• Name two examples of computer programs in everyday life.
+• Explain why Python is a good programming language to learn.
+","1.1 Background
+Learning Objectives
+By the end of this section you should be able to
+• Name two examples of computer programs in everyday life.
+• Explain why Python is a good programming language to learn.
+Computer programs
+A computer is an electronic device that stores and processes information. Examples of computers include
+smartphones, tablets, laptops, desktops, and servers. Technically, a program is a sequence of instructions that
+a computer can run. Programs help people accomplish everyday tasks, create new technology, and have fun.
+The goal of this book is to teach introductory programming and problem solving. Writing programs is a
+creative activity, inherently useful, and rewarding! No prior background in computer science is necessary to
+read this book. Many different types of programs exist, as shown in the illustration below. This book will focus
+on general purpose programs that typically run ""behind the scenes.""
+CHECKPOINT
+Online music streaming
+Online music streaming; ch 1, video 1 (https://www.openstax.org/r/music-streaming)
+CONCEPTS IN PRACTICE
+Computers and programs
+1 . How many types of programs were described in the animation?
+a. 3
+b. 4
+c. 5
+2 . What type of program will this book explain how to write?
+a. a tool that summarizes an individual's music preferences
+b. a mobile app for managing and sharing playlists of songs
+c. a website that shows the top artists for the past five years
+3 . Which of the following devices is an example of a computer?
+a. wired headphones that plug into a smartphone
+b. remote control that pauses or skips the current song
+c. wi-fi speaker that streams music from Amazon
+4 . Reading this book requires a strong background in mathematics.
+a. true
+b. false
+EXPLORING FURTHER
+Later chapters of this book show how to write analysis programs using real data. Example libraries that",2,"Heading, phạm vi và hai learning objectives đầy đủ; có thể hiểu độc lập.",Codex_AI_text_review,2,"Heading, phạm vi và hai learning objectives đầy đủ; có thể hiểu độc lập.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-03-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,19,0,openstax-python-2026-ch01-02:p19:b1ff84d12ce3db9abf4c,"provide access to online streaming services include Spotipy (https://openstax.org/r/100spotipy), Pytube
+(https://openstax.org/r/100pytube), and Pydora (https://openstax.org/r/100pydora). Python-related tools
+often have the letters ""py"" in their name.
+","provide access to online streaming services include Spotipy (https://openstax.org/r/100spotipy), Pytube
+(https://openstax.org/r/100pytube), and Pydora (https://openstax.org/r/100pydora). Python-related tools
+often have the letters ""py"" in their name.
+The Python language
+This book introduces Python (https://openstax.org/r/100python), one of the top programming languages
+today. Leading tech giants like Google, Apple, NASA, Instagram, Pixar, and others use Python extensively.
+One reason why Python is popular is because many libraries exist for doing real work. A library is a collection
+of code that can be used in other programs. Python comes with an extensive Standard Library
+(https://openstax.org/r/100pythlibrary) for solving everyday computing problems like extracting data from files
+and creating summary reports. In addition, the community develops many other libraries for Python. Ex:
+Pandas (https://openstax.org/r/100pandas) is a widely used library for data analysis.
+Another reason why Python is popular is because the syntax is concise and straightforward. The syntax of a
+language defines how code must be structured. Syntax rules define the keywords, symbols, and formatting
+used in programs. Compared to other programming languages, Python is more concise and straightforward.
+EXAMPLE 1.1
+Hello world in Python and Java
+By tradition, Hello World (https://openstax.org/r/100helloworld) is the first program to write when learning
+a new language. This program simply displays the message ""Hello, World!"" to the user. The hello world
+program is only one line in Python:
+print(""Hello, World!"")
+In contrast, the hello world program is five lines in Java (a different language).
+public class Hello {
+  public static void main(String[] args) {
+   System.out.println(""Hello, World!"");
+  }
+}
+However, conciseness is not the only consideration for which language is used. In different situations
+different languages may be more appropriate. Ex: Java is often used in Android development.
+CHECKPOINT
+Counting lines in a file
+Counting lines in a file; ch 1, video 2 (https://www.openstax.org/r/counting-lines)",1,"Danh sách thư viện và ý nghĩa py hiểu được một phần, nhưng câu mở đầu nối từ trang trước và thiếu chủ thể.",Codex_AI_text_review,1,"Danh sách thư viện và ý nghĩa py hiểu được một phần, nhưng câu mở đầu nối từ trang trước và thiếu chủ thể.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-04-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,20,0,openstax-python-2026-ch01-02:p20:3d4f14d6f00c6bb7e677,"CONCEPTS IN PRACTICE
+Python vs Java syntax
+5 . In general, Python programs are _____ than Java programs.
+a. faster
+b. longer
+c. shorter
+6 . In the example programs above, what syntax required by Java is not required by Python?
+a. semicolons
+b. parentheses
+c. quote marks
+","CONCEPTS IN PRACTICE
+Python vs Java syntax
+5 . In general, Python programs are _____ than Java programs.
+a. faster
+b. longer
+c. shorter
+6 . In the example programs above, what syntax required by Java is not required by Python?
+a. semicolons
+b. parentheses
+c. quote marks
+Favorite song
+The program below asks for your name and displays a friendly greeting. Run the program and see what
+happens. In the error message, EOF stands for End of File.
+• Many of the programs in this chapter expect input from the user. Enter your name in the Input box
+below the code. Run the program again, and see what changes.
+• Copy the following lines to the end of the program:
+song = input()
+print(""Cool! I like"", song, ""too."")
+print(""What is your favorite song?"") song = input() print(""Cool! I like"", song,
+""too."")
+• The modified program reads two lines of input: name and song. Add your favorite song to the Input
+box below your name, and run the program again.
+The next section of the book will explain how print() and input() work. Feel free to experiment with this
+code until you are ready to move on.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-1-background)
+1.2 Input/output
+Learning objectives
+By the end of this section you should be able to
+• Display output using the print() function.
+• Obtain user input using the input() function.
+Basic output
+The print() function displays output to the user. Output is the information or result produced by a program.
+The sep and end options can be used to customize the output. Table 1.1 shows examples of sep and end.
+TRY IT",1,"Các câu hỏi/lựa chọn đầy đủ, nhưng câu 6 tham chiếu example programs nằm ngoài chunk.",Codex_AI_text_review,1,"Các câu hỏi/lựa chọn đầy đủ, nhưng câu 6 tham chiếu example programs nằm ngoài chunk.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-05-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,21,0,openstax-python-2026-ch01-02:p21:0881f82a7beb4956e189,"Multiple values, separated by commas, can be printed in the same statement. By default, each value is
+separated by a space character in the output. The sep option can be used to change this behavior.
+By default, the print() function adds a newline character at the end of the output. A newline character tells
+the display to move to the next line. The end option can be used to continue printing on the same line.
+","Multiple values, separated by commas, can be printed in the same statement. By default, each value is
+separated by a space character in the output. The sep option can be used to change this behavior.
+By default, the print() function adds a newline character at the end of the output. A newline character tells
+the display to move to the next line. The end option can be used to continue printing on the same line.
+Code Output
+print(""Today is Monday."")
+print(""I like string beans."")
+Today is Monday.
+I like string beans.
+print(""Today"", ""is"", ""Monday"")
+print(""Today"", ""is"", ""Monday"", sep=""..."")
+Today is Monday
+Today...is...Monday
+print(""Today is Monday, "", end="""")
+print(""I like string beans."")
+Today is Monday, I like string
+beans.
+print(""Today"", ""is"", ""Monday"", sep=""? "",
+end=""!!"")
+print(""I like string beans."")
+Today? is? Monday!!I like string
+beans.
+Table 1.1 Example uses of print().
+CHECKPOINT
+Displaying output to the user
+1 3 1 Displaying output to the user (https://www.openstax.org/r/displaying-output)
+CONCEPTS IN PRACTICE
+The print() function
+1 . Which line of code prints Hello world! as one line of output?
+a. print(Hello world!)
+b. print(""Hello"", ""world"", ""!"")
+c. print(""Hello world!"")
+2 . Which lines of code prints Hello world! as one line of output?
+a. print(""Hello"")
+print("" world!"")
+b. print(""Hello"")
+print("" world!"", end="""")
+c. print(""Hello"", end="""")
+print("" world!"")
+3 . What output is produced by the following statement?",2,"Hai đoạn giải thích sep/end giữ trọn ý, có đủ chủ thể và ngữ cảnh để hiểu độc lập.",Codex_AI_text_review,2,"Hai đoạn giải thích sep/end giữ trọn ý, có đủ chủ thể và ngữ cảnh để hiểu độc lập.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-06-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,22,0,openstax-python-2026-ch01-02:p22:fb93405f922255935c14,"print(""555"", ""0123"", sep=""-"")
+a. 555 0123
+b. 5550123-
+c. 555-0123
+DO SPACES REALLY MATTER?
+Spaces and newline characters are not inherently important. However, learning to be precise is an essential
+skill for programming. Noticing little details, like how words are separated and how lines end, helps new
+programmers become better.
+","print(""555"", ""0123"", sep=""-"")
+a. 555 0123
+b. 5550123-
+c. 555-0123
+DO SPACES REALLY MATTER?
+Spaces and newline characters are not inherently important. However, learning to be precise is an essential
+skill for programming. Noticing little details, like how words are separated and how lines end, helps new
+programmers become better.
+Basic input
+Computer programs often receive input from the user. Input is what a user enters into a program. An input
+statement, variable = input(""prompt""), has three parts:
+1. A variable refers to a value stored in memory. In the statement above, variable can be replaced with any
+name the programmer chooses.
+2. The input() function reads one line of input from the user. A function is a named, reusable block of code
+that performs a task when called. The input is stored in the computer's memory and can be accessed later
+using the variable.
+3. A prompt is a short message that indicates the program is waiting for input. In the statement above,
+""prompt"" can be omitted or replaced with any message.
+CHECKPOINT
+Obtaining input from the user
+Displaying output to the user; ch 1, video 3 (https://www.openstax.org/r/obtaining-input)
+CONCEPTS IN PRACTICE
+The input() function
+4 . Which line of code correctly obtains and stores user input?
+a. input()
+b. today_is = input
+c. today_is = input()
+5 . Someone named Sophia enters their name when prompted with
+print(""Please enter your name: "")
+name = input()
+What is displayed by print(""You entered:"", name)?
+a. You entered: name",1,"Phần spaces/newlines hoàn chỉnh, nhưng đầu chunk là code và lựa chọn không kèm đề câu hỏi.",Codex_AI_text_review,1,"Phần spaces/newlines hoàn chỉnh, nhưng đầu chunk là code và lựa chọn không kèm đề câu hỏi.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-07-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,23,0,openstax-python-2026-ch01-02:p23:6faf81756bc61dd102ba,"b. You entered: Sophia
+c. You entered:, Sophia
+6 . What is the output if the user enters ""six"" as the input?
+print(""Please enter a number: "")
+number = input()
+print(""Value ="", number)
+a. Value = six
+b. Value = 6
+c. Value = number
+","b. You entered: Sophia
+c. You entered:, Sophia
+6 . What is the output if the user enters ""six"" as the input?
+print(""Please enter a number: "")
+number = input()
+print(""Value ="", number)
+a. Value = six
+b. Value = 6
+c. Value = number
+Frost poem
+Write a program that uses multiple print() statements to output the following poem by Robert Frost
+(https://openstax.org/r/100robertfrost). Each print() statement should correspond to one line of output.
+Tip: You don't need to write the entire program all at once. Try writing the first print() statement, and
+then click the Run button. Then write the next print() statement, and click the Run button again.
+Continue writing and testing the code incrementally until you finish the program.
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I--
+I took the one less traveled by,
+And that has made all the difference.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-2-input-
+output)
+Name and likes
+Write a program that asks the following two questions (example input in bold):
+What is your name? Shakira
+What do you like? singing
+Output a blank line after reading the input. Then output the following message based on the input:
+Shakira likes singing
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-2-input-
+TRY IT
+TRY IT",1,"Câu 6 có code và đáp án để hiểu, nhưng đầu chunk còn hai lựa chọn của câu trước.",Codex_AI_text_review,1,"Câu 6 có code và đáp án để hiểu, nhưng đầu chunk còn hai lựa chọn của câu trước.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-08-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,24,0,openstax-python-2026-ch01-02:p24:f63a7454decec336b5da,"output)
+","output)
+1.3 Variables
+Learning objectives
+By the end of this section you should be able to
+• Assign variables and print variables.
+• Explain rules for naming variables.
+Assignment statement
+Variables allow programs to refer to values using names rather than memory locations. Ex: age refers to a
+person's age, and birth refers to a person's date of birth.
+A statement can set a variable to a value using the assignment operator (=). Note that this is different from
+the equal sign of mathematics. Ex: age = 6 or birth = ""May 15"". The left side of the assignment statement
+is a variable, and the right side is the value the variable is assigned.
+CHECKPOINT
+Assigning and using variables
+Assigning and using variables; ch 1, video 5 (https://www.openstax.org/r/using-variables)
+CONCEPTS IN PRACTICE
+Assigning and using variables
+1 . Which line of code correctly retrieves the value of the variable, city, after the following assignment?
+city = ""Chicago""
+a. print(""In which city do you live?"")
+b. city = ""London""
+c. print(""The city where you live is"", city)
+2 . Which program stores and retrieves a variable correctly?
+a. print(""Total ="", total)
+total = 6
+b. total = 6
+print(""Total ="", total)
+c. print(""Total ="", total)
+total = input()
+3 . Which is the assignment operator?
+a. :
+b. ==
+c. =
+4 . Which is a valid assignment?",0,"Chỉ còn mảnh output), thiếu câu và ngữ cảnh nên không hiểu độc lập.",Codex_AI_text_review,0,"Chỉ còn mảnh output), thiếu câu và ngữ cảnh nên không hiểu độc lập.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-09-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,25,0,openstax-python-2026-ch01-02:p25:e76b5c908f93f61c9ccb,"a. temperature = 98.5
+b. 98.5 = temperature
+c. temperature - 23.2
+","a. temperature = 98.5
+b. 98.5 = temperature
+c. temperature - 23.2
+Variable naming rules
+A variable name can consist of letters, digits, and underscores and be of any length. The name cannot start
+with a digit. Ex: 101class is invalid. Also, letter case matters. Ex: Total is different from total. Python's style
+guide recommends writing variable names in snake case, which is all lowercase with underscores in between
+each word, such as first_name or total_price.
+A name should be short and descriptive, so words are preferred over single characters in programs for
+readability. Ex: A variable named count indicates the variable's purpose better than a variable named c.
+Python has reserved words, known as keywords, which have special functions and cannot be used as names
+for variables (or other objects).
+False await else import pass
+None break except in raise
+True class finally is return
+and continue for lambda try
+as def from nonlocal while
+assert del global not with
+asynch elif if or yield
+Table 1.2 Keywords
+CONCEPTS IN PRACTICE
+Valid variable names
+5 . Which can be used as a variable name?
+a. median
+b. class
+c. import
+6 . Why is the name, 2nd_input, not a valid variable name?
+a. contains an underscore
+b. starts with a digit
+c. is a keyword
+7 . Which would be a good name for a variable storing a zip code?
+a. z
+b. var_2",0,"Chỉ có ba lựa chọn gán biến, không có câu hỏi hoặc giải thích đi kèm.",Codex_AI_text_review,0,"Chỉ có ba lựa chọn gán biến, không có câu hỏi hoặc giải thích đi kèm.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-10-B,B,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,26,0,openstax-python-2026-ch01-02:p26:daedfeb5bf74b9f8e3bc,"c. zip_code
+8 . Given the variable name, DogBreed, which improvement conforms to Python's style guide?
+a. dog_breed
+b. dogBreed
+c. dog-breed
+","c. zip_code
+8 . Given the variable name, DogBreed, which improvement conforms to Python's style guide?
+a. dog_breed
+b. dogBreed
+c. dog-breed
+Final score
+Write a Python computer program that:
+• Creates a variable, team1, assigned with the value ""Liverpool"".
+• Creates a variable, team2, assigned with the value ""Chelsea"".
+• Creates a variable score1, assigned with the value 4.
+• Creates a variable, score2, assigned with the value 3.
+• Prints team1, ""versus"", and team2 as a single line of output.
+• Prints ""Final score: "", score1, ""to"", score2 as a single line of output.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-3-variables)
+1.4 String basics
+Learning objectives
+By the end of this section you should be able to
+• Use the built-in len() function to get a string's length.
+• Concatenate string literals and variables using the + operator.
+Quote marks
+A string is a sequence of characters enclosed by matching single (') or double ("") quotes. Ex: ""Happy
+birthday!"" and '21' are both strings.
+To include a single quote (') in a string, enclose the string with matching double quotes (""). Ex: ""Won't this
+work?"" To include a double quote (""), enclose the string with matching single quotes ('). Ex: 'They said ""Try
+it!"", so I did'.
+Valid string Invalid string
+""17"" or '17' 17
+""seventeen"" or 'seventeen' seventeen
+""Where?"" or 'Where?' ""Where?'
+Table 1.3 Rules for strings.
+TRY IT",1,Câu 8 về naming style có đề/lựa chọn đầy đủ; đầu vẫn còn đáp án c. zip_code của câu trước.,Codex_AI_text_review,1,Câu 8 về naming style có đề/lựa chọn đầy đủ; đầu vẫn còn đáp án c. zip_code của câu trước.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-01-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,17,0,openstax-python-2026-ch01-02:p17:3fe0b6e24870ed66aa93,"Figure 1.1 credit: Larissa Chu, CC BY 4.0
+","Figure 1.1 credit: Larissa Chu, CC BY 4.0
+Chapter Outline
+1.1 Background
+1.2 Input/output
+1.3 Variables
+1.4 String basics
+1.5 Number basics
+1.6 Error messages
+1.7 Comments
+1.8 Why Python?
+1.9 Chapter summary
+Introduction
+Computers and programs are everywhere in today's world. Programs affect many aspects of daily life and
+society as a whole. People depend on programs for communication, shopping, entertainment, health care, and
+countless other needs. Learning how to program computers opens the door to many careers and
+opportunities for building a better world.
+Programs consist of statements to be run one after the other. A statement describes some action to be
+carried out.
+The statement print(""Good morning"") instructs Python to output the message ""Good morning"" to the
+user. The statement count = 0 instructs Python to assign the integer 0 to the variable count.
+This chapter introduces statements for input and output, assigning variables, and basic arithmetic. Making
+mistakes is a normal part of programming, and the chapter includes advice on understanding error messages.
+The chapter ends with a short history of Python and discusses why Python has become so popular today.
+Statements
+1",0,Chỉ có credit của Figure 1.1; không có hình hoặc nội dung để hiểu ý chính.,Codex_AI_text_review,0,Chỉ có credit của Figure 1.1; không có hình hoặc nội dung để hiểu ý chính.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-02-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,18,0,openstax-python-2026-ch01-02:p18:957421c19c5ea7957985,"1.1 Background
+Learning Objectives
+By the end of this section you should be able to
+• Name two examples of computer programs in everyday life.
+• Explain why Python is a good programming language to learn.
+","1.1 Background
+Learning Objectives
+By the end of this section you should be able to
+• Name two examples of computer programs in everyday life.
+• Explain why Python is a good programming language to learn.
+Computer programs
+A computer is an electronic device that stores and processes information. Examples of computers include
+smartphones, tablets, laptops, desktops, and servers. Technically, a program is a sequence of instructions that
+a computer can run. Programs help people accomplish everyday tasks, create new technology, and have fun.
+The goal of this book is to teach introductory programming and problem solving. Writing programs is a
+creative activity, inherently useful, and rewarding! No prior background in computer science is necessary to
+read this book. Many different types of programs exist, as shown in the illustration below. This book will focus
+on general purpose programs that typically run ""behind the scenes.""
+CHECKPOINT
+Online music streaming
+Online music streaming; ch 1, video 1 (https://www.openstax.org/r/music-streaming)
+CONCEPTS IN PRACTICE
+Computers and programs
+1 . How many types of programs were described in the animation?
+a. 3
+b. 4
+c. 5
+2 . What type of program will this book explain how to write?
+a. a tool that summarizes an individual's music preferences
+b. a mobile app for managing and sharing playlists of songs
+c. a website that shows the top artists for the past five years
+3 . Which of the following devices is an example of a computer?
+a. wired headphones that plug into a smartphone
+b. remote control that pauses or skips the current song
+c. wi-fi speaker that streams music from Amazon
+4 . Reading this book requires a strong background in mathematics.
+a. true
+b. false
+EXPLORING FURTHER
+Later chapters of this book show how to write analysis programs using real data. Example libraries that",2,"Heading, phạm vi và hai learning objectives đầy đủ; có thể hiểu độc lập.",Codex_AI_text_review,2,"Heading, phạm vi và hai learning objectives đầy đủ; có thể hiểu độc lập.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-03-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,19,0,openstax-python-2026-ch01-02:p19:b1ff84d12ce3db9abf4c,"provide access to online streaming services include Spotipy (https://openstax.org/r/100spotipy), Pytube
+(https://openstax.org/r/100pytube), and Pydora (https://openstax.org/r/100pydora). Python-related tools
+often have the letters ""py"" in their name.
+","provide access to online streaming services include Spotipy (https://openstax.org/r/100spotipy), Pytube
+(https://openstax.org/r/100pytube), and Pydora (https://openstax.org/r/100pydora). Python-related tools
+often have the letters ""py"" in their name.
+The Python language
+This book introduces Python (https://openstax.org/r/100python), one of the top programming languages
+today. Leading tech giants like Google, Apple, NASA, Instagram, Pixar, and others use Python extensively.
+One reason why Python is popular is because many libraries exist for doing real work. A library is a collection
+of code that can be used in other programs. Python comes with an extensive Standard Library
+(https://openstax.org/r/100pythlibrary) for solving everyday computing problems like extracting data from files
+and creating summary reports. In addition, the community develops many other libraries for Python. Ex:
+Pandas (https://openstax.org/r/100pandas) is a widely used library for data analysis.
+Another reason why Python is popular is because the syntax is concise and straightforward. The syntax of a
+language defines how code must be structured. Syntax rules define the keywords, symbols, and formatting
+used in programs. Compared to other programming languages, Python is more concise and straightforward.
+EXAMPLE 1.1
+Hello world in Python and Java
+By tradition, Hello World (https://openstax.org/r/100helloworld) is the first program to write when learning
+a new language. This program simply displays the message ""Hello, World!"" to the user. The hello world
+program is only one line in Python:
+print(""Hello, World!"")
+In contrast, the hello world program is five lines in Java (a different language).
+public class Hello {
+  public static void main(String[] args) {
+   System.out.println(""Hello, World!"");
+  }
+}
+However, conciseness is not the only consideration for which language is used. In different situations
+different languages may be more appropriate. Ex: Java is often used in Android development.
+CHECKPOINT
+Counting lines in a file
+Counting lines in a file; ch 1, video 2 (https://www.openstax.org/r/counting-lines)",1,"Danh sách thư viện và ý nghĩa py hiểu được một phần, nhưng câu mở đầu nối từ trang trước và thiếu chủ thể.",Codex_AI_text_review,1,"Danh sách thư viện và ý nghĩa py hiểu được một phần, nhưng câu mở đầu nối từ trang trước và thiếu chủ thể.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-04-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,20,0,openstax-python-2026-ch01-02:p20:3d4f14d6f00c6bb7e677,"CONCEPTS IN PRACTICE
+Python vs Java syntax
+5 . In general, Python programs are _____ than Java programs.
+a. faster
+b. longer
+c. shorter
+6 . In the example programs above, what syntax required by Java is not required by Python?
+a. semicolons
+b. parentheses
+c. quote marks
+","CONCEPTS IN PRACTICE
+Python vs Java syntax
+5 . In general, Python programs are _____ than Java programs.
+a. faster
+b. longer
+c. shorter
+6 . In the example programs above, what syntax required by Java is not required by Python?
+a. semicolons
+b. parentheses
+c. quote marks
+Favorite song
+The program below asks for your name and displays a friendly greeting. Run the program and see what
+happens. In the error message, EOF stands for End of File.
+• Many of the programs in this chapter expect input from the user. Enter your name in the Input box
+below the code. Run the program again, and see what changes.
+• Copy the following lines to the end of the program:
+song = input()
+print(""Cool! I like"", song, ""too."")
+print(""What is your favorite song?"") song = input() print(""Cool! I like"", song,
+""too."")
+• The modified program reads two lines of input: name and song. Add your favorite song to the Input
+box below your name, and run the program again.
+The next section of the book will explain how print() and input() work. Feel free to experiment with this
+code until you are ready to move on.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-1-background)
+1.2 Input/output
+Learning objectives
+By the end of this section you should be able to
+• Display output using the print() function.
+• Obtain user input using the input() function.
+Basic output
+The print() function displays output to the user. Output is the information or result produced by a program.
+The sep and end options can be used to customize the output. Table 1.1 shows examples of sep and end.
+TRY IT",1,"Các câu hỏi/lựa chọn đầy đủ, nhưng câu 6 tham chiếu example programs nằm ngoài chunk.",Codex_AI_text_review,1,"Các câu hỏi/lựa chọn đầy đủ, nhưng câu 6 tham chiếu example programs nằm ngoài chunk.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-05-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,21,0,openstax-python-2026-ch01-02:p21:0881f82a7beb4956e189,"Multiple values, separated by commas, can be printed in the same statement. By default, each value is
+separated by a space character in the output. The sep option can be used to change this behavior.
+By default, the print() function adds a newline character at the end of the output. A newline character tells
+the display to move to the next line. The end option can be used to continue printing on the same line.
+","Multiple values, separated by commas, can be printed in the same statement. By default, each value is
+separated by a space character in the output. The sep option can be used to change this behavior.
+By default, the print() function adds a newline character at the end of the output. A newline character tells
+the display to move to the next line. The end option can be used to continue printing on the same line.
+Code Output
+print(""Today is Monday."")
+print(""I like string beans."")
+Today is Monday.
+I like string beans.
+print(""Today"", ""is"", ""Monday"")
+print(""Today"", ""is"", ""Monday"", sep=""..."")
+Today is Monday
+Today...is...Monday
+print(""Today is Monday, "", end="""")
+print(""I like string beans."")
+Today is Monday, I like string
+beans.
+print(""Today"", ""is"", ""Monday"", sep=""? "",
+end=""!!"")
+print(""I like string beans."")
+Today? is? Monday!!I like string
+beans.
+Table 1.1 Example uses of print().
+CHECKPOINT
+Displaying output to the user
+1 3 1 Displaying output to the user (https://www.openstax.org/r/displaying-output)
+CONCEPTS IN PRACTICE
+The print() function
+1 . Which line of code prints Hello world! as one line of output?
+a. print(Hello world!)
+b. print(""Hello"", ""world"", ""!"")
+c. print(""Hello world!"")
+2 . Which lines of code prints Hello world! as one line of output?
+a. print(""Hello"")
+print("" world!"")
+b. print(""Hello"")
+print("" world!"", end="""")
+c. print(""Hello"", end="""")
+print("" world!"")
+3 . What output is produced by the following statement?",2,"Hai đoạn giải thích sep/end giữ trọn ý, có đủ chủ thể và ngữ cảnh để hiểu độc lập.",Codex_AI_text_review,2,"Hai đoạn giải thích sep/end giữ trọn ý, có đủ chủ thể và ngữ cảnh để hiểu độc lập.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-06-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,22,0,openstax-python-2026-ch01-02:p22:fb93405f922255935c14,"print(""555"", ""0123"", sep=""-"")
+a. 555 0123
+b. 5550123-
+c. 555-0123
+DO SPACES REALLY MATTER?
+Spaces and newline characters are not inherently important. However, learning to be precise is an essential
+skill for programming. Noticing little details, like how words are separated and how lines end, helps new
+programmers become better.
+","print(""555"", ""0123"", sep=""-"")
+a. 555 0123
+b. 5550123-
+c. 555-0123
+DO SPACES REALLY MATTER?
+Spaces and newline characters are not inherently important. However, learning to be precise is an essential
+skill for programming. Noticing little details, like how words are separated and how lines end, helps new
+programmers become better.
+Basic input
+Computer programs often receive input from the user. Input is what a user enters into a program. An input
+statement, variable = input(""prompt""), has three parts:
+1. A variable refers to a value stored in memory. In the statement above, variable can be replaced with any
+name the programmer chooses.
+2. The input() function reads one line of input from the user. A function is a named, reusable block of code
+that performs a task when called. The input is stored in the computer's memory and can be accessed later
+using the variable.
+3. A prompt is a short message that indicates the program is waiting for input. In the statement above,
+""prompt"" can be omitted or replaced with any message.
+CHECKPOINT
+Obtaining input from the user
+Displaying output to the user; ch 1, video 3 (https://www.openstax.org/r/obtaining-input)
+CONCEPTS IN PRACTICE
+The input() function
+4 . Which line of code correctly obtains and stores user input?
+a. input()
+b. today_is = input
+c. today_is = input()
+5 . Someone named Sophia enters their name when prompted with
+print(""Please enter your name: "")
+name = input()
+What is displayed by print(""You entered:"", name)?
+a. You entered: name",1,"Phần spaces/newlines hoàn chỉnh, nhưng đầu chunk là code và lựa chọn không kèm đề câu hỏi.",Codex_AI_text_review,1,"Phần spaces/newlines hoàn chỉnh, nhưng đầu chunk là code và lựa chọn không kèm đề câu hỏi.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-07-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,23,0,openstax-python-2026-ch01-02:p23:6faf81756bc61dd102ba,"b. You entered: Sophia
+c. You entered:, Sophia
+6 . What is the output if the user enters ""six"" as the input?
+print(""Please enter a number: "")
+number = input()
+print(""Value ="", number)
+a. Value = six
+b. Value = 6
+c. Value = number
+","b. You entered: Sophia
+c. You entered:, Sophia
+6 . What is the output if the user enters ""six"" as the input?
+print(""Please enter a number: "")
+number = input()
+print(""Value ="", number)
+a. Value = six
+b. Value = 6
+c. Value = number
+Frost poem
+Write a program that uses multiple print() statements to output the following poem by Robert Frost
+(https://openstax.org/r/100robertfrost). Each print() statement should correspond to one line of output.
+Tip: You don't need to write the entire program all at once. Try writing the first print() statement, and
+then click the Run button. Then write the next print() statement, and click the Run button again.
+Continue writing and testing the code incrementally until you finish the program.
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I--
+I took the one less traveled by,
+And that has made all the difference.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-2-input-
+output)
+Name and likes
+Write a program that asks the following two questions (example input in bold):
+What is your name? Shakira
+What do you like? singing
+Output a blank line after reading the input. Then output the following message based on the input:
+Shakira likes singing
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-2-input-
+TRY IT
+TRY IT",1,"Câu 6 có code và đáp án để hiểu, nhưng đầu chunk còn hai lựa chọn của câu trước.",Codex_AI_text_review,1,"Câu 6 có code và đáp án để hiểu, nhưng đầu chunk còn hai lựa chọn của câu trước.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-08-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,24,0,openstax-python-2026-ch01-02:p24:f63a7454decec336b5da,"output)
+","output)
+1.3 Variables
+Learning objectives
+By the end of this section you should be able to
+• Assign variables and print variables.
+• Explain rules for naming variables.
+Assignment statement
+Variables allow programs to refer to values using names rather than memory locations. Ex: age refers to a
+person's age, and birth refers to a person's date of birth.
+A statement can set a variable to a value using the assignment operator (=). Note that this is different from
+the equal sign of mathematics. Ex: age = 6 or birth = ""May 15"". The left side of the assignment statement
+is a variable, and the right side is the value the variable is assigned.
+CHECKPOINT
+Assigning and using variables
+Assigning and using variables; ch 1, video 5 (https://www.openstax.org/r/using-variables)
+CONCEPTS IN PRACTICE
+Assigning and using variables
+1 . Which line of code correctly retrieves the value of the variable, city, after the following assignment?
+city = ""Chicago""
+a. print(""In which city do you live?"")
+b. city = ""London""
+c. print(""The city where you live is"", city)
+2 . Which program stores and retrieves a variable correctly?
+a. print(""Total ="", total)
+total = 6
+b. total = 6
+print(""Total ="", total)
+c. print(""Total ="", total)
+total = input()
+3 . Which is the assignment operator?
+a. :
+b. ==
+c. =
+4 . Which is a valid assignment?",0,"Chỉ còn mảnh output), thiếu câu và ngữ cảnh nên không hiểu độc lập.",Codex_AI_text_review,0,"Chỉ còn mảnh output), thiếu câu và ngữ cảnh nên không hiểu độc lập.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-09-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,25,0,openstax-python-2026-ch01-02:p25:e76b5c908f93f61c9ccb,"a. temperature = 98.5
+b. 98.5 = temperature
+c. temperature - 23.2
+","a. temperature = 98.5
+b. 98.5 = temperature
+c. temperature - 23.2
+Variable naming rules
+A variable name can consist of letters, digits, and underscores and be of any length. The name cannot start
+with a digit. Ex: 101class is invalid. Also, letter case matters. Ex: Total is different from total. Python's style
+guide recommends writing variable names in snake case, which is all lowercase with underscores in between
+each word, such as first_name or total_price.
+A name should be short and descriptive, so words are preferred over single characters in programs for
+readability. Ex: A variable named count indicates the variable's purpose better than a variable named c.
+Python has reserved words, known as keywords, which have special functions and cannot be used as names
+for variables (or other objects).
+False await else import pass
+None break except in raise
+True class finally is return
+and continue for lambda try
+as def from nonlocal while
+assert del global not with
+asynch elif if or yield
+Table 1.2 Keywords
+CONCEPTS IN PRACTICE
+Valid variable names
+5 . Which can be used as a variable name?
+a. median
+b. class
+c. import
+6 . Why is the name, 2nd_input, not a valid variable name?
+a. contains an underscore
+b. starts with a digit
+c. is a keyword
+7 . Which would be a good name for a variable storing a zip code?
+a. z
+b. var_2",0,"Chỉ có ba lựa chọn gán biến, không có câu hỏi hoặc giải thích đi kèm.",Codex_AI_text_review,0,"Chỉ có ba lựa chọn gán biến, không có câu hỏi hoặc giải thích đi kèm.",Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+coh-10-C,C,openstax-python-2026-ch01-02,Introduction_to_Python_Programming-WEB.pdf,26,0,openstax-python-2026-ch01-02:p26:daedfeb5bf74b9f8e3bc,"c. zip_code
+8 . Given the variable name, DogBreed, which improvement conforms to Python's style guide?
+a. dog_breed
+b. dogBreed
+c. dog-breed
+","c. zip_code
+8 . Given the variable name, DogBreed, which improvement conforms to Python's style guide?
+a. dog_breed
+b. dogBreed
+c. dog-breed
+Final score
+Write a Python computer program that:
+• Creates a variable, team1, assigned with the value ""Liverpool"".
+• Creates a variable, team2, assigned with the value ""Chelsea"".
+• Creates a variable score1, assigned with the value 4.
+• Creates a variable, score2, assigned with the value 3.
+• Prints team1, ""versus"", and team2 as a single line of output.
+• Prints ""Final score: "", score1, ""to"", score2 as a single line of output.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-3-variables)
+1.4 String basics
+Learning objectives
+By the end of this section you should be able to
+• Use the built-in len() function to get a string's length.
+• Concatenate string literals and variables using the + operator.
+Quote marks
+A string is a sequence of characters enclosed by matching single (') or double ("") quotes. Ex: ""Happy
+birthday!"" and '21' are both strings.
+To include a single quote (') in a string, enclose the string with matching double quotes (""). Ex: ""Won't this
+work?"" To include a double quote (""), enclose the string with matching single quotes ('). Ex: 'They said ""Try
+it!"", so I did'.
+Valid string Invalid string
+""17"" or '17' 17
+""seventeen"" or 'seventeen' seventeen
+""Where?"" or 'Where?' ""Where?'
+Table 1.3 Rules for strings.
+TRY IT",1,Câu 8 về naming style có đề/lựa chọn đầy đủ; đầu vẫn còn đáp án c. zip_code của câu trước.,Codex_AI_text_review,1,Câu 8 về naming style có đề/lựa chọn đầy đủ; đầu vẫn còn đáp án c. zip_code của câu trước.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00

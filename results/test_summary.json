@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-11-13T11:23:54.626956+00:00",
+  "split": "test",
+  "query_embedding_count": 5,
+  "retrieval_query_count": 15,
+  "elapsed_seconds": 2.875358499994036,
+  "metrics": {
+    "A": {
+      "test": {
+        "question_count": 5,
+        "hit_at_1": {
+          "hits": 3,
+          "total": 5,
+          "value": 0.6
+        },
+        "evidence_hit_at_3": {
+          "hits": 3,
+          "total": 5,
+          "value": 0.6
+        }
+      }
+    },
+    "B": {
+      "test": {
+        "question_count": 5,
+        "hit_at_1": {
+          "hits": 2,
+          "total": 5,
+          "value": 0.4
+        },
+        "evidence_hit_at_3": {
+          "hits": 3,
+          "total": 5,
+          "value": 0.6
+        }
+      }
+    },
+    "C": {
+      "test": {
+        "question_count": 5,
+        "hit_at_1": {
+          "hits": 2,
+          "total": 5,
+          "value": 0.4
+        },
+        "evidence_hit_at_3": {
+          "hits": 3,
+          "total": 5,
+          "value": 0.6
+        }
+      }
+    }
+  },
+  "traces_file": "results/test_traces.jsonl",
+  "traces_sha256": "b61d7954f815908666ee58c4df027af80b96a5d593e9674437e70aecae148d28",
+  "snapshots": {
+    "starter/config.json": "5d0f5de21838932d37b95226847f27f85fe1358ad39c30100ff3359398c51912",
+    "benchmark/protocol.json": "04fd6a30c58f37d18aceb43718ee838c20fd51054ee8063e8327017e6512cea2",
+    "benchmark/questions.json": "d1c5a9a8f562b3b182bdcc8d297c67b89413e23f910b80c70038752bff8a8766",
+    "data/pages.jsonl": "32ced556f4e1e3ddca84c4849aeddd7eab2a8ce9789f0f2638a85c7ddba4d448",
+    "results/ingestion_summary.json": "c3471ebcfb01b340f04ab7d15aad25853da15590d3f026c44a004517356bb412",
+    "starter/src/chunking.py": "16e0b0297429ebf04358715cbde9cb4ec7060ffcbe82e2956a747f107838ff32",
+    "starter/src/embeddings.py": "6c5d5084e188a98586f96d65ee4bb89442c99bac3c4f2345333e82c9fc5c84f9",
+    "starter/src/store.py": "39484c9ef8bcf633ddb083d6bad77e90f942fd1249ede517c5529b6e38849ef3",
+    "starter/src/evaluation.py": "85d2fcf4ffcfef0124e31e9877b3a9157a10b358a759c89e96817c8cd795f05a",
+    "starter/src/run.py": "dbb4146a31d91d9d8d7a73f419f3d586321fa65185b2b982065d07d07e23ee45"
+  },
+  "evaluation_method": "automatic full evidence substring after Unicode/whitespace normalization; matching source/page required",
+  "limitations": "Exact evidence is an automatic proxy. Equivalent evidence needs documented adjudication; human grounding/coherence/metadata labels are not inferred.",
+  "api_cost_usd": 0,
+  "test_evaluated": true,
+  "selected_strategy": "B"
+}

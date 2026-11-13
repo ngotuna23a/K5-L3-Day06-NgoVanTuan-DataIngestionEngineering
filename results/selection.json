@@ -1,0 +1,73 @@
+{
+  "selected_strategy": "B",
+  "ranking": [
+    {
+      "strategy": "B",
+      "hit_at_1": {
+        "hits": 7,
+        "total": 15,
+        "value": 0.4666666666666667
+      },
+      "evidence_hit_at_3": {
+        "hits": 10,
+        "total": 15,
+        "value": 0.6666666666666666
+      },
+      "ingest_seconds": 32.03668160003144
+    },
+    {
+      "strategy": "C",
+      "hit_at_1": {
+        "hits": 7,
+        "total": 15,
+        "value": 0.4666666666666667
+      },
+      "evidence_hit_at_3": {
+        "hits": 10,
+        "total": 15,
+        "value": 0.6666666666666666
+      },
+      "ingest_seconds": 32.08631280003465
+    },
+    {
+      "strategy": "A",
+      "hit_at_1": {
+        "hits": 3,
+        "total": 15,
+        "value": 0.2
+      },
+      "evidence_hit_at_3": {
+        "hits": 5,
+        "total": 15,
+        "value": 0.3333333333333333
+      },
+      "ingest_seconds": 13.589672200003406
+    }
+  ],
+  "frozen_at": "2026-11-13T11:23:18.045328+00:00",
+  "selection_split": "dev",
+  "selection_rule": {
+    "data": "dev only",
+    "ranking": [
+      "maximize Evidence Hit@3",
+      "maximize Hit@1",
+      "minimize measured ingest elapsed seconds",
+      "prefer A, then B, then C if still tied"
+    ],
+    "test_policy": "Freeze strategies after dev selection, then evaluate all three once on the same five test questions. Record results without further tuning."
+  },
+  "snapshots": {
+    "starter/config.json": "5d0f5de21838932d37b95226847f27f85fe1358ad39c30100ff3359398c51912",
+    "benchmark/protocol.json": "04fd6a30c58f37d18aceb43718ee838c20fd51054ee8063e8327017e6512cea2",
+    "benchmark/questions.json": "d1c5a9a8f562b3b182bdcc8d297c67b89413e23f910b80c70038752bff8a8766",
+    "data/pages.jsonl": "32ced556f4e1e3ddca84c4849aeddd7eab2a8ce9789f0f2638a85c7ddba4d448",
+    "results/ingestion_summary.json": "c3471ebcfb01b340f04ab7d15aad25853da15590d3f026c44a004517356bb412",
+    "starter/src/chunking.py": "16e0b0297429ebf04358715cbde9cb4ec7060ffcbe82e2956a747f107838ff32",
+    "starter/src/embeddings.py": "6c5d5084e188a98586f96d65ee4bb89442c99bac3c4f2345333e82c9fc5c84f9",
+    "starter/src/store.py": "39484c9ef8bcf633ddb083d6bad77e90f942fd1249ede517c5529b6e38849ef3",
+    "starter/src/evaluation.py": "85d2fcf4ffcfef0124e31e9877b3a9157a10b358a759c89e96817c8cd795f05a",
+    "starter/src/run.py": "dbb4146a31d91d9d8d7a73f419f3d586321fa65185b2b982065d07d07e23ee45"
+  },
+  "dev_traces_sha256": "41cbaff0cd871f8e56c46a0c46929ee851e7df74844d1e1f9b59332a9aca6b29",
+  "test_evaluated": false
+}

@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed,500,50,document_id/source/page/chapter,none,intfloat/multilingual-e5-small,Fixed windows provide a simple retrieval baseline,3/15,5/15,3/5,3/5,Dev and test retrieval completed
+B,heading_paragraph,1000,0,document_id/source/page/chapter,none,intfloat/multilingual-e5-small,Structure boundaries may preserve context better than fixed windows,7/15,10/15,2/5,3/5,PDF headings inferred from text; no blank-line paragraphs
+C,heading_paragraph,1000,0,document_id/source/page/chapter,input chapter filter,intfloat/multilingual-e5-small,Chapter filtering may reduce irrelevant results on scoped questions,7/15,10/15,2/5,3/5,Same chunks and vectors as B; only retrieval filter changes

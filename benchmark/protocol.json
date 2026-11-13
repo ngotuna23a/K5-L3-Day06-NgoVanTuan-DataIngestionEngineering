@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "created_at": "2026-11-13",
+  "frozen_before_retrieval_experiments": true,
+  "questions_file": "benchmark/questions.json",
+  "questions_sha256": "d1c5a9a8f562b3b182bdcc8d297c67b89413e23f910b80c70038752bff8a8766",
+  "corpus_file": "data/pages.jsonl",
+  "corpus_sha256": "32ced556f4e1e3ddca84c4849aeddd7eab2a8ce9789f0f2638a85c7ddba4d448",
+  "source_pdf_sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d",
+  "question_language": "vi",
+  "source_language": "en",
+  "split_counts": {
+    "dev": 15,
+    "test": 5
+  },
+  "filter_counts": {
+    "dev": 2,
+    "test": 2
+  },
+  "split_method": "Assign topics before retrieval: reserve sections 1.4, 1.7, 2.4, 2.7 and 2.8 for test; all other question topics are dev. Not a random split.",
+  "test_topics": [
+    "1.4 String basics",
+    "1.7 Comments",
+    "2.4 Floating-point errors",
+    "2.7 Formatting code",
+    "2.8 Python careers"
+  ],
+  "leakage_limitations": [
+    "All questions use the same book and chapters. Related concepts, summaries and mixed-section pages can overlap across splits.",
+    "Test authorship/evidence validation requires reading test questions; no retrieval experiments have been run at creation time. Do not use subsequent test scores or traces to tune strategies.",
+    "Vietnamese queries over English sources require an appropriate embedding model; keep the same model and query/document processing for every strategy."
+  ],
+  "retrieval_input_fields": [
+    "id",
+    "split",
+    "question",
+    "filter"
+  ],
+  "gold_fields_for_evaluation_only": [
+    "expected_answer",
+    "gold_source_id",
+    "gold_page",
+    "evidence_quote",
+    "alternative_gold",
+    "topic"
+  ],
+  "filter_policy": {
+    "allowed_fields": [
+      "chapter"
+    ],
+    "input_origin": "The requested chapter is explicitly present in each filtered question before retrieval.",
+    "A": "Ignore filter; vector retrieval over the whole corpus.",
+    "B": "Ignore filter; vector retrieval over the whole corpus.",
+    "C": "Apply the supplied chapter filter; if filter is empty, retrieve without filtering.",
+    "B_C_comparison": "Use identical chunks/model/store/metric and vary only metadata filtering."
+  },
+  "selection_rule": {
+    "data": "dev only",
+    "ranking": [
+      "maximize Evidence Hit@3",
+      "maximize Hit@1",
+      "minimize measured ingest elapsed seconds",
+      "prefer A, then B, then C if still tied"
+    ],
+    "test_policy": "Freeze strategies after dev selection, then evaluate all three once on the same five test questions. Record results without further tuning."
+  },
+  "metrics": {
+    "top_k": 3,
+    "hit_definition": "A hit must match a documented gold source/page and contain sufficient primary or alternative evidence. Whitespace-normalized substring match is an automatic proxy; record human adjudication for equivalent evidence.",
+    "report": [
+      "Hit@1 numerator/denominator",
+      "Evidence Hit@3 numerator/denominator"
+    ],
+    "grounding": "Manual 0/1/2 evidence sufficiency labels on five test questions for every strategy; no LLM answer-accuracy claim.",
+    "metadata": "Audit source/page/chapter on test top-3; filter compliance uses only filtered questions.",
+    "coherence": "Manual 0/1/2 labels at the same ten preselected source positions for all strategies."
+  },
+  "coherence_positions": [
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 17,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 18,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 19,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 20,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 21,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 22,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 23,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 24,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 25,
+      "character_offset": 0
+    },
+    {
+      "source_id": "openstax-python-2026-ch01-02",
+      "page": 26,
+      "character_offset": 0
+    }
+  ],
+  "evidence_verification": "Whitespace-normalized quotes selected from page text and checked against original PDF text extraction; semantic support reviewed during authorship. No visual inspection or human audit scores claimed.",
+  "attribution": "Access for free at openstax.org.",
+  "license": "CC BY-NC-SA 4.0"
+}

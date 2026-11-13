@@ -1,0 +1,4 @@
+# Local CPU setup; PostgreSQL/Docker dependencies are not needed for this option.
+pypdf>=5,<7
+qdrant-client>=1.15,<2
+fastembed>=0.7,<1

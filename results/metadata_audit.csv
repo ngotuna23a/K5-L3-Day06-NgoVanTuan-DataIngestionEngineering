@@ -1,0 +1,2044 @@
+﻿sample_id,strategy,question_id,rank,chunk_id,source,page,chapter,expected_source,expected_page,expected_chapter,chunk_text,source_page_text,requested_chapter,auto_fields_match,auto_text_found_in_pdf,metadata_ok,reason,reviewer,attribution,license,document_id,expected_document_id,proposed_metadata_ok,proposed_reason,proposed_by,reviewer_id,review_confirmation,confirmation_recorded_at
+meta-q16-A-1,A,q16,1,openstax-python-2026-ch01-02:p39:e2fbd71b67b27c909b97,Introduction_to_Python_Programming-WEB.pdf,39,1,Introduction_to_Python_Programming-WEB.pdf,39,1," of the following is NOT a docstring?
+a. """"""Vacations Madlib.""""""
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two
+nouns, which are then used to print a funny story about a vacation. """"""
+c. # Vacations Madlib.
+#
+# This program asks the user for two adjectives
+# and two nouns, which are then used to print
+# a funny story about a vacation.
+9 . Which docstring is most useful for this program?
+a. """"""Vacations Madlib.""""""
+b. """"""Vacations Madlib. This program asks the user f","c. insert a # at the beginning of the line. 
+Documentation 
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation 
+written for others who will use the program but not necessarily read the source code. Most of the official 
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings. 
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common 
+elements of a docstring include a one-line summary, a blank line, and a longer description. 
+CHECKPOINT 
+Vacations docstring 
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring) 
+CONCEPTS IN PRACTICE 
+Documentation 
+7 . The main purpose of writing docstrings is to . . . 
+a. summarize the program's purpose or usage. 
+b. explain how each part of the code works. 
+c. maintain a list of ideas for new features. 
+8 . Which of the following is NOT a docstring? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. # Vacations Madlib. 
+# 
+# This program asks the user for two adjectives 
+# and two nouns, which are then used to print 
+# a funny story about a vacation. 
+9 . Which docstring is most useful for this program? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. The code 
+uses four variables to store the user input: two for the adjectives, and two 
+for the nouns. The output is displayed on seven lines, beginning with a blank 
+line after the input. """""" 
+1.7 • Comments     29",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q16-A-2,A,q16,2,openstax-python-2026-ch01-02:p71:0f8fedafbb87da5b74bf,Introduction_to_Python_Programming-WEB.pdf,71,2,Introduction_to_Python_Programming-WEB.pdf,71,2,"t has a lot in common with Python, but it is sort of a
+restricted subset.""
+2. ""The second stream of material that is going to come out of this project is a
+programming environment and a set of programming tools where we really want to
+focus again on the needs of the newbie. This environment is going to have to be
+extremely user-friendly.""
+3. ""I have this hope that there is a better way. Higher-level tools that actually
+let you see the structure of the software more clearly will be of tremendous
+","c. saying= ""Happy "" 
+""New Year"" 
+Spaced out 
+The following code works correctly but is formatted poorly. In particular, the code does not include spaces 
+recommended by PEP 8. Furthermore, two of the lines are about 90 characters long. Reformat the code to 
+follow the guidelines in this section. Be careful not to change the behavior of the code itself. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+Five quotes 
+Write a program that prints the following five quotes (source: BrainyQuote (https://openstax.org/r/
+100brainyquote)) from Guido van Rossum, the creator of Python. Your program should have exactly five 
+print statements, one for each quote: 
+1. ""If you're talking about Java in particular, Python is about the best fit you 
+can get amongst all the other languages. Yet the funny thing is, from a language 
+point of view, JavaScript has a lot in common with Python, but it is sort of a 
+restricted subset."" 
+2. ""The second stream of material that is going to come out of this project is a 
+programming environment and a set of programming tools where we really want to 
+focus again on the needs of the newbie. This environment is going to have to be 
+extremely user-friendly."" 
+3. ""I have this hope that there is a better way. Higher-level tools that actually 
+let you see the structure of the software more clearly will be of tremendous 
+value."" 
+4. ""Now, it's my belief that Python is a lot easier than to teach to students 
+programming and teach them C or C++ or Java at the same time because all the 
+details of the languages are so much harder. Other scripting languages really don't 
+work very well there either."" 
+5. ""I would guess that the decision to create a small special purpose language or 
+use an existing general purpose language is one of the toughest decisions that 
+anyone facing the need for a new language must make."" 
+Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format 
+the code using multi-line statements and escape sequences as necessary. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+TRY IT 
+TRY IT 
+2.7 • Formatting code     61",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q16-A-3,A,q16,3,openstax-python-2026-ch01-02:p27:3820a02f43c2a0872d87,Introduction_to_Python_Programming-WEB.pdf,27,1,Introduction_to_Python_Programming-WEB.pdf,27,1,"string?
+a. I know you'll answer correctly!
+b. 'I know you'll answer correctly!'
+c. ""I know you'll answer correctly!""
+4 . Which is a valid string?
+a. You say ""Please"" to be polite
+b. ""You say ""Please"" to be polite""
+c. 'You say ""Please"" to be polite'
+len() function
+A common operation on a string object is to get the string length, or the number of characters in the string.
+The len() function, when called on a string value, returns the string length.
+CHECKPOINT
+Using len() to get the length of a st","Valid string Invalid string 
+""I hope you aren't sad."" 'I hope you aren't sad.' 
+'The teacher said ""Correct!"" ' ""The teacher said ""Correct!"" "" 
+Table 1.3 Rules for strings. 
+CONCEPTS IN PRACTICE 
+Valid and invalid strings 
+1 . Which of the following is a string? 
+a. Hello! 
+b. 29 
+c. ""7 days"" 
+2 . Which line of code assigns a string to the variable email? 
+a. ""fred78@gmail.com"" 
+b. ""email = fred78@gmail.com"" 
+c. email = ""fred78@gmail.com"" 
+3 . Which is a valid string? 
+a. I know you'll answer correctly! 
+b. 'I know you'll answer correctly!' 
+c. ""I know you'll answer correctly!"" 
+4 . Which is a valid string? 
+a. You say ""Please"" to be polite 
+b. ""You say ""Please"" to be polite"" 
+c. 'You say ""Please"" to be polite' 
+len() function 
+A common operation on a string object is to get the string length, or the number of characters in the string. 
+The len() function, when called on a string value, returns the string length. 
+CHECKPOINT 
+Using len() to get the length of a string 
+Using len() to get the length of a string; ch 1, video 6 (https://www.openstax.org/r/length-of-string) 
+CONCEPTS IN PRACTICE 
+Applying len() function to string values 
+5 . What is the return value for len(""Hi Ali"")? 
+a. 2 
+1.4 • String basics     17",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-A-1,A,q17,1,openstax-python-2026-ch01-02:p39:94de781ea8ad8ba9d60f,Introduction_to_Python_Programming-WEB.pdf,39,1,Introduction_to_Python_Programming-WEB.pdf,39,1,"c. insert a # at the beginning of the line.
+Documentation
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation
+written for others who will use the program but not necessarily read the source code. Most of the official
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings.
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common
+elements of a docstring include ","c. insert a # at the beginning of the line. 
+Documentation 
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation 
+written for others who will use the program but not necessarily read the source code. Most of the official 
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings. 
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common 
+elements of a docstring include a one-line summary, a blank line, and a longer description. 
+CHECKPOINT 
+Vacations docstring 
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring) 
+CONCEPTS IN PRACTICE 
+Documentation 
+7 . The main purpose of writing docstrings is to . . . 
+a. summarize the program's purpose or usage. 
+b. explain how each part of the code works. 
+c. maintain a list of ideas for new features. 
+8 . Which of the following is NOT a docstring? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. # Vacations Madlib. 
+# 
+# This program asks the user for two adjectives 
+# and two nouns, which are then used to print 
+# a funny story about a vacation. 
+9 . Which docstring is most useful for this program? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. The code 
+uses four variables to store the user input: two for the adjectives, and two 
+for the nouns. The output is displayed on seven lines, beginning with a blank 
+line after the input. """""" 
+1.7 • Comments     29",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-A-2,A,q17,2,openstax-python-2026-ch01-02:p39:e2fbd71b67b27c909b97,Introduction_to_Python_Programming-WEB.pdf,39,1,Introduction_to_Python_Programming-WEB.pdf,39,1," of the following is NOT a docstring?
+a. """"""Vacations Madlib.""""""
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two
+nouns, which are then used to print a funny story about a vacation. """"""
+c. # Vacations Madlib.
+#
+# This program asks the user for two adjectives
+# and two nouns, which are then used to print
+# a funny story about a vacation.
+9 . Which docstring is most useful for this program?
+a. """"""Vacations Madlib.""""""
+b. """"""Vacations Madlib. This program asks the user f","c. insert a # at the beginning of the line. 
+Documentation 
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation 
+written for others who will use the program but not necessarily read the source code. Most of the official 
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings. 
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common 
+elements of a docstring include a one-line summary, a blank line, and a longer description. 
+CHECKPOINT 
+Vacations docstring 
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring) 
+CONCEPTS IN PRACTICE 
+Documentation 
+7 . The main purpose of writing docstrings is to . . . 
+a. summarize the program's purpose or usage. 
+b. explain how each part of the code works. 
+c. maintain a list of ideas for new features. 
+8 . Which of the following is NOT a docstring? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. # Vacations Madlib. 
+# 
+# This program asks the user for two adjectives 
+# and two nouns, which are then used to print 
+# a funny story about a vacation. 
+9 . Which docstring is most useful for this program? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. The code 
+uses four variables to store the user input: two for the adjectives, and two 
+for the nouns. The output is displayed on seven lines, beginning with a blank 
+line after the input. """""" 
+1.7 • Comments     29",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-A-3,A,q17,3,openstax-python-2026-ch01-02:p40:faa3d8d0dc85e574d123,Introduction_to_Python_Programming-WEB.pdf,40,1,Introduction_to_Python_Programming-WEB.pdf,40,1,"calculation
+Write a docstring for the following program. The first line of the docstring should explain, in one short
+sentence, what the program is. The second line of the docstring should be blank. The third and subsequent
+lines should include a longer explanation of what the program does. At the end of the docstring, add a line
+that says ""Author: "" followed by your name.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments)
+1.8 Why Python?
+Le","Whose birthday 
+Add two comments to the following program: one for the input, and one for the output. Separate the input 
+and output with a blank line. Then, compare your comments with the sample solution, and ask yourself the 
+following questions: 
+• Are your comments longer or shorter? Why? 
+• Is the formatting of your comments correct? 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments) 
+Gravity calculation 
+Write a docstring for the following program. The first line of the docstring should explain, in one short 
+sentence, what the program is. The second line of the docstring should be blank. The third and subsequent 
+lines should include a longer explanation of what the program does. At the end of the docstring, add a line 
+that says ""Author: "" followed by your name. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments) 
+1.8 Why Python? 
+Learning objectives 
+By the end of this section you should be able to 
+• Name two historical facts about how Python was first created. 
+• Describe two ways Python is considered a popular language. 
+Historical background 
+Python has an interesting history. In 1982, Guido van Rossum (https://openstax.org/r/100vanRossum), the 
+creator of Python, started working at CWI (https://openstax.org/r/100CWI), a Dutch national research institute. 
+He joined a team that was designing a new programming language, named ABC, for teaching and prototyping. 
+ABC's simplicity was ideal for beginners, but the language lacked features required to write advanced 
+programs. 
+Several years later, van Rossum joined a different team at CWI working on an operating system. The team 
+needed an easier way to write programs for monitoring computers and analyzing data. Languages common in 
+the 1980's were (and still are) difficult to use for these kinds of programs. van Rossum envisioned a new 
+language that would have a simple syntax, like ABC, but also provide advanced features that professionals 
+would need. 
+At first, van Rossum started working on this new language as a hobby during his free time. He named the 
+language Python because he was a fan of the British comedy group Monty Python (https://openstax.org/r/
+100MontyPython). Over the next year, he and his colleagues successfully used Python many times for real 
+work. van Rossum eventually decided to share Python with the broader programming community online. He 
+TRY IT 
+TRY IT 
+30     1 • Statements
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-A-1,A,q18,1,openstax-python-2026-ch01-02:p57:a24fce0fac116b11f0f7,Introduction_to_Python_Programming-WEB.pdf,57,2,Introduction_to_Python_Programming-WEB.pdf,57,2,"ion
+Python's round() function is used to round a floating-point number to a given number of decimal places. The
+function requires two arguments. The first argument is the number to be rounded. The second argument
+decides the number of decimal places to which the number is rounded. If the second argument is not
+provided, the number will be rounded to the closest integer. The round() function can be used to mitigate
+floating-point errors.
+Ex:
+• round(2.451, 2) = 2.45
+• round(2.451) = 2
+CHECKPOINT
+","Below,  and  can be represented, but  is too large and causes an overflow error. 
+print('3.0 to the power of 256 =', 
+3.0**256) 
+print('3.0 to the power of 512 = ', 
+3.0**512) 
+print('3.0 to the power of 1024 = ', 
+3.0**1024) 
+3.0 to the power of 256 = 
+1.3900845237714473e+122 
+3.0 to the power of 512 = 
+1.9323349832288915e+244 
+3.0 to the power of 1024 = 
+Traceback (most recent call last): 
+  File ""<stdin>"", line 3, in <module> 
+    print('3.0 to the power of 1024 = ', 
+3.0**1024) 
+OverflowError: (34, 'Numerical result out 
+of range') 
+Table 2.2 Overflow error. 
+CONCEPTS IN PRACTICE 
+Floating-point errors 
+For each situation, which error occurs? 
+1 . The statement result = 2.0 * (10.0 ** 500) assigns the variable result with too large of a value. 
+a. round-off 
+b. overflow 
+2 . 0.123456789012345678901234567890 * 0.1 produces 0.012345678901234568430878013601. 
+a. round-off 
+b. overflow 
+Floating point round() function 
+Python's round() function is used to round a floating-point number to a given number of decimal places. The 
+function requires two arguments. The first argument is the number to be rounded. The second argument 
+decides the number of decimal places to which the number is rounded. If the second argument is not 
+provided, the number will be rounded to the closest integer. The round() function can be used to mitigate 
+floating-point errors. 
+Ex: 
+• round(2.451, 2) = 2.45 
+• round(2.451) = 2 
+CHECKPOINT 
+Examples of round() function 
+Examples of a round () function; ch 2, video 7 (https://www.openstax.org/r/round-function) 
+2.4 • Floating-point errors     47",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-A-2,A,q18,2,openstax-python-2026-ch01-02:p61:36ef44ea20f220e95032,Introduction_to_Python_Programming-WEB.pdf,61,2,Introduction_to_Python_Programming-WEB.pdf,61,2,"ents, as an integer. Use the round() function to avoid floating-point
+errors.
+TRY IT","Current minute (0-59)? 25 
+Trip time (in minutes)? 340 
+In this example, the current time is 13:25 (1:25pm). The trip time is 340 minutes (5 hours and 40 minutes). 
+340 minutes after 13:25 is 19:05 (7:05pm). Your program should output the result in this format: 
+Arrival hour is 19 
+Arrival minute is 5 
+The arrival hour must be between 0 and 23. Ex: Adding 120 minutes to 23:00 should be 1:00, not 25:00. The 
+arrival minute must be between 0 and 59. Ex: Adding 20 minutes to 8:55 should be 9:15, not 8:75. 
+Hint: Multiply the current hour by 60 to convert hours to minutes. Then, calculate the arrival time, in total 
+minutes, as an integer. 
+Your code must not use Python keywords from later chapters, such as if or while. The solution requires 
+only addition, multiplication, division, and modulo. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-5-dividing-integers) 
+Change machine 
+Self-checkout aisles are becoming increasingly popular at grocery stores. Customers scan their own items, 
+and a computer determines the total purchase amount. Customers who pay in cash insert dollar bills, and a 
+machine automatically dispenses change in coins. 
+That's where this program comes into the story. Your task is to calculate how many of each coin to 
+dispense. Your program should use the following prompts (user input in bold): 
+Total amount? 18.76 
+Cash payment? 20 
+You may assume that the cash paid will always be a whole number (representing dollar bills) that is greater 
+than or equal to the total amount. The program should calculate and output the amount of change due 
+and how many dollars, quarters, dimes, nickels, and pennies should be dispensed: 
+Change Due $1.24 
+ Dollars: 1 
+Quarters: 0 
+   Dimes: 2 
+ Nickels: 0 
+ Pennies: 4 
+Hint: Calculate the total change, in cents, as an integer. Use the round() function to avoid floating-point 
+errors. 
+TRY IT 
+2.5 • Dividing integers     51",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-A-3,A,q18,3,openstax-python-2026-ch01-02:p57:33da68eb6556b6694f22,Introduction_to_Python_Programming-WEB.pdf,57,2,Introduction_to_Python_Programming-WEB.pdf,57,2," 1024 = ',
+3.0**1024)
+OverflowError: (34, 'Numerical result out
+of range')
+Table 2.2 Overflow error.
+CONCEPTS IN PRACTICE
+Floating-point errors
+For each situation, which error occurs?
+1 . The statement result = 2.0 * (10.0 ** 500) assigns the variable result with too large of a value.
+a. round-off
+b. overflow
+2 . 0.123456789012345678901234567890 * 0.1 produces 0.012345678901234568430878013601.
+a. round-off
+b. overflow
+Floating point round() function
+Python's round() function is used to round a f","Below,  and  can be represented, but  is too large and causes an overflow error. 
+print('3.0 to the power of 256 =', 
+3.0**256) 
+print('3.0 to the power of 512 = ', 
+3.0**512) 
+print('3.0 to the power of 1024 = ', 
+3.0**1024) 
+3.0 to the power of 256 = 
+1.3900845237714473e+122 
+3.0 to the power of 512 = 
+1.9323349832288915e+244 
+3.0 to the power of 1024 = 
+Traceback (most recent call last): 
+  File ""<stdin>"", line 3, in <module> 
+    print('3.0 to the power of 1024 = ', 
+3.0**1024) 
+OverflowError: (34, 'Numerical result out 
+of range') 
+Table 2.2 Overflow error. 
+CONCEPTS IN PRACTICE 
+Floating-point errors 
+For each situation, which error occurs? 
+1 . The statement result = 2.0 * (10.0 ** 500) assigns the variable result with too large of a value. 
+a. round-off 
+b. overflow 
+2 . 0.123456789012345678901234567890 * 0.1 produces 0.012345678901234568430878013601. 
+a. round-off 
+b. overflow 
+Floating point round() function 
+Python's round() function is used to round a floating-point number to a given number of decimal places. The 
+function requires two arguments. The first argument is the number to be rounded. The second argument 
+decides the number of decimal places to which the number is rounded. If the second argument is not 
+provided, the number will be rounded to the closest integer. The round() function can be used to mitigate 
+floating-point errors. 
+Ex: 
+• round(2.451, 2) = 2.45 
+• round(2.451) = 2 
+CHECKPOINT 
+Examples of round() function 
+Examples of a round () function; ch 2, video 7 (https://www.openstax.org/r/round-function) 
+2.4 • Floating-point errors     47",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-A-1,A,q19,1,openstax-python-2026-ch01-02:p71:4a7c4cad387f3e8de1d3,Introduction_to_Python_Programming-WEB.pdf,71,2,Introduction_to_Python_Programming-WEB.pdf,71,2,"is one of the toughest decisions that
+anyone facing the need for a new language must make.""
+Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format
+the code using multi-line statements and escape sequences as necessary.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code)
+TRY IT
+TRY IT","c. saying= ""Happy "" 
+""New Year"" 
+Spaced out 
+The following code works correctly but is formatted poorly. In particular, the code does not include spaces 
+recommended by PEP 8. Furthermore, two of the lines are about 90 characters long. Reformat the code to 
+follow the guidelines in this section. Be careful not to change the behavior of the code itself. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+Five quotes 
+Write a program that prints the following five quotes (source: BrainyQuote (https://openstax.org/r/
+100brainyquote)) from Guido van Rossum, the creator of Python. Your program should have exactly five 
+print statements, one for each quote: 
+1. ""If you're talking about Java in particular, Python is about the best fit you 
+can get amongst all the other languages. Yet the funny thing is, from a language 
+point of view, JavaScript has a lot in common with Python, but it is sort of a 
+restricted subset."" 
+2. ""The second stream of material that is going to come out of this project is a 
+programming environment and a set of programming tools where we really want to 
+focus again on the needs of the newbie. This environment is going to have to be 
+extremely user-friendly."" 
+3. ""I have this hope that there is a better way. Higher-level tools that actually 
+let you see the structure of the software more clearly will be of tremendous 
+value."" 
+4. ""Now, it's my belief that Python is a lot easier than to teach to students 
+programming and teach them C or C++ or Java at the same time because all the 
+details of the languages are so much harder. Other scripting languages really don't 
+work very well there either."" 
+5. ""I would guess that the decision to create a small special purpose language or 
+use an existing general purpose language is one of the toughest decisions that 
+anyone facing the need for a new language must make."" 
+Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format 
+the code using multi-line statements and escape sequences as necessary. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+TRY IT 
+TRY IT 
+2.7 • Formatting code     61",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-A-2,A,q19,2,openstax-python-2026-ch01-02:p71:0f8fedafbb87da5b74bf,Introduction_to_Python_Programming-WEB.pdf,71,2,Introduction_to_Python_Programming-WEB.pdf,71,2,"t has a lot in common with Python, but it is sort of a
+restricted subset.""
+2. ""The second stream of material that is going to come out of this project is a
+programming environment and a set of programming tools where we really want to
+focus again on the needs of the newbie. This environment is going to have to be
+extremely user-friendly.""
+3. ""I have this hope that there is a better way. Higher-level tools that actually
+let you see the structure of the software more clearly will be of tremendous
+","c. saying= ""Happy "" 
+""New Year"" 
+Spaced out 
+The following code works correctly but is formatted poorly. In particular, the code does not include spaces 
+recommended by PEP 8. Furthermore, two of the lines are about 90 characters long. Reformat the code to 
+follow the guidelines in this section. Be careful not to change the behavior of the code itself. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+Five quotes 
+Write a program that prints the following five quotes (source: BrainyQuote (https://openstax.org/r/
+100brainyquote)) from Guido van Rossum, the creator of Python. Your program should have exactly five 
+print statements, one for each quote: 
+1. ""If you're talking about Java in particular, Python is about the best fit you 
+can get amongst all the other languages. Yet the funny thing is, from a language 
+point of view, JavaScript has a lot in common with Python, but it is sort of a 
+restricted subset."" 
+2. ""The second stream of material that is going to come out of this project is a 
+programming environment and a set of programming tools where we really want to 
+focus again on the needs of the newbie. This environment is going to have to be 
+extremely user-friendly."" 
+3. ""I have this hope that there is a better way. Higher-level tools that actually 
+let you see the structure of the software more clearly will be of tremendous 
+value."" 
+4. ""Now, it's my belief that Python is a lot easier than to teach to students 
+programming and teach them C or C++ or Java at the same time because all the 
+details of the languages are so much harder. Other scripting languages really don't 
+work very well there either."" 
+5. ""I would guess that the decision to create a small special purpose language or 
+use an existing general purpose language is one of the toughest decisions that 
+anyone facing the need for a new language must make."" 
+Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format 
+the code using multi-line statements and escape sequences as necessary. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+TRY IT 
+TRY IT 
+2.7 • Formatting code     61",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-A-3,A,q19,3,openstax-python-2026-ch01-02:p36:7f1c21fc13815abcc05f,Introduction_to_Python_Programming-WEB.pdf,36,1,Introduction_to_Python_Programming-WEB.pdf,36,1,"e of code.
+• Then run the program again to find and correct the second error.
+• Keep running and correcting the program until no errors are found.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-6-error-
+messages)
+Wrong symbols
+This code is based on an earlier example, but the code contains several mistakes.
+• One line is missing required punctuation, and another line uses incorrect symbols.
+• Run the program to find the first error, and correct the c","c. SyntaxError 
+5 . birth = input(""Enter your birth date: ) 
+print(""Happy birthday on "", birth) 
+a. IndentationError 
+b. NameError 
+c. SyntaxError 
+6 . print(""Breakfast options:"") 
+print("" A. Cereal"") 
+print("" B. Eggs"") 
+print("" C. Yogurt"") 
+choice = intput(""What would you like? "") 
+a. IndentationError 
+b. NameError 
+c. SyntaxError 
+Three errors 
+The following program has three errors. 
+• Run the program to find the first error, and correct the corresponding line of code. 
+• Then run the program again to find and correct the second error. 
+• Keep running and correcting the program until no errors are found. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-6-error-
+messages) 
+Wrong symbols 
+This code is based on an earlier example, but the code contains several mistakes. 
+• One line is missing required punctuation, and another line uses incorrect symbols. 
+• Run the program to find the first error, and correct the corresponding line of code. 
+• Keep running and correcting the program until no errors are found. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/1-6-error-
+messages) 
+TRY IT 
+TRY IT 
+26     1 • Statements
+Access for free at openstax.org",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-A-1,A,q20,1,openstax-python-2026-ch01-02:p72:40096af4336fa4f7fc05,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"rites a Python program to operate an interactive art display.
+Humanities A linguist writes a Python program to analyze changes in slang word usage.
+Science A biologist writes a Python program to analyze DNA sequences for cancer.
+Table 2.8 Python outside of CS and IT.
+Application Example use of Python
+Artificial
+intelligence
+An engineer develops models to support image and voice recognition. Ex: TensorFlow
+library (https://openstax.org/r/100tensorflow).
+Data
+visualization
+A statistician creates c","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-A-2,A,q20,2,openstax-python-2026-ch01-02:p72:17378b4a9e37af28396c,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"r
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields
+and careers.
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to
+program is a useful skill that can enhance any career.
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of
+p","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-A-3,A,q20,3,openstax-python-2026-ch01-02:p72:37acd459614540419ead,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"2.8 Python careers
+Learning objectives
+By the end of this section you should be able to
+• Summarize how Python is used in fields other than CS and IT.
+• Describe two different kinds of applications made with Python.
+Fields and applications
+Learning Python opens the door to many programming-related careers. Example job titles include software
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer
+science (CS), information technology (IT), or a ","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q16-B-1,B,q16,1,openstax-python-2026-ch01-02:p70:48175104fc77623c8f95,Introduction_to_Python_Programming-WEB.pdf,70,2,Introduction_to_Python_Programming-WEB.pdf,70,2,"a. Hello,Ada
+b. Hello, Ada
+c. SyntaxError
+","a. Hello,Ada 
+b. Hello, Ada 
+c. SyntaxError 
+Multi-line statements 
+Most statements in a Python program need only one line of code. But occasionally longer statements need to 
+span multiple lines. Python provides two ways to write multi-line statements: 
+• Explicit line joining, using \ characters: 
+    decl = ""The unanimous Declaration of the thirteen united States of "" \ 
+            ""America, When in the Course of human events, it becomes "" \ 
+            ""necessary for one people to dissolve the political bands..."" 
+• Implicit line joining, using parentheses: 
+    decl = (""The unanimous Declaration of the thirteen united States of "" 
+            ""America, When in the Course of human events, it becomes "" 
+            ""necessary for one people to dissolve the political bands..."") 
+Implicit line joining is more common, since many statements and expressions use parentheses anyway. PEP 8 
+recommends avoiding the use of explicit line joining whenever possible. 
+CONCEPTS IN PRACTICE 
+Multi-line statements 
+8 . Which character is used for explicit line joining? 
+a. / 
+b. \ 
+c. | 
+9 . What is the best way to print a very long string? 
+a. Break up the string into multiple smaller strings. 
+print(""..."" # first part of string 
+""..."" # next part of string 
+""..."") 
+b. Print the string using multiple print statements. 
+print(""..."") # first part of string 
+print(""..."") # next part of string 
+print(""..."") 
+c. Assign the string to a variable and print the variable. 
+text = ""..."" # the entire string 
+print(text) 
+10 . Which example consists of two statements? 
+a. print(""Happy "" 
+""New Year"") 
+b. saying = (""Happy "" 
+""New Year"") 
+60     2 • Expressions
+Access for free at openstax.org",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q16-B-2,B,q16,2,openstax-python-2026-ch01-02:p33:b3b15c6047669d1aae65,Introduction_to_Python_Programming-WEB.pdf,33,1,Introduction_to_Python_Programming-WEB.pdf,33,1,"b. 2
+c. 3
+","b. 2 
+c. 3 
+Values and types 
+Write a Python computer program that: 
+1. Defines an integer variable named 'int_a' and assigns 'int_a' with the value 10. 
+2. Defines a floating-point variable named 'float_a' and assigns 'float_a' with the value 10.0. 
+3. Defines a string variable named 'string_a' and assigns 'string_a' with the string value ""10"". 
+4. Prints the value of each of the three variables along with their type. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-5-number-basics) 
+Meters to feet 
+Write a Python computer program that: 
+1. Assigns the integer value 10 to a variable, meters. 
+2. Assigns the floating-point value 3.28 to a variable, meter2feet. 
+3. Calculates 10 meters in feet by multiplying meter by meter2feet. Store the result in a variable, feet. 
+4. Prints the content of variable feet in the output. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-5-number-basics) 
+1.6 Error messages 
+Learning objectives 
+By the end of this section you should be able to 
+• Identify the error type and line number in error messages. 
+• Correct syntax errors, name errors, and indentation errors. 
+How to read errors 
+A natural part of programming is making mistakes. Even experienced programmers make mistakes when 
+writing code. Errors may result when mistakes are made when writing code. The computer requires very 
+specific instructions telling the computer what to do. If the instructions are not clear, then the computer does 
+not know what to do and gives back an error. 
+When an error occurs, Python displays a message with the following information: 
+1. The line number of the error. 
+2. The type of error (Ex: SyntaxError). 
+3. Additional details about the error. 
+TRY IT 
+TRY IT 
+1.6 • Error messages     23",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q16-B-3,B,q16,3,openstax-python-2026-ch01-02:p50:87a2a2c8d07ba791fe50,Introduction_to_Python_Programming-WEB.pdf,50,2,Introduction_to_Python_Programming-WEB.pdf,50,2,"• abs(5)
+• len(""Yo"")
+• len(""HoHo"")
+• round(9.49)
+• round(9.50)
+Note: These functions (type, str, int, len, and round) will be explored in more detail later in the chapter.
+You can read more about the built-in functions (https://openstax.org/r/100builtin) in the Python
+documentation.
+","• abs(5) 
+• len(""Yo"") 
+• len(""HoHo"") 
+• round(9.49) 
+• round(9.50) 
+Note: These functions (type, str, int, len, and round) will be explored in more detail later in the chapter. 
+You can read more about the built-in functions (https://openstax.org/r/100builtin) in the Python 
+documentation. 
+Correcting mistakes 
+Open a Python shell on your computer, or use the one at python.org/shell (https://openstax.org/r/
+100pythonshell). Run the following two statements in the shell: 
+• x = 123 
+• y = 456 
+Making mistakes is common while typing in a shell. The following lines include typos and other errors. For 
+each line: (1) run the line in a shell to see the result, (2) press the up arrow to repeat the line, and (3) edit 
+the line to get the correct result. 
+• print(""Easy as"", X) 
+• print(""y divided by 2 is"", y / 0) 
+• name = intput(""What is your name? "") 
+• print(name, ""is"", int(name), ""letters long."") 
+• print(""That's all folks!) 
+The expected output, after correcting typos, should look like: 
+• Easy as 123 
+• y divided by 2 is 228.0 
+• (no error/output) 
+• Stacie is 6 letters long. 
+• That's all folks! 
+2.2 Type conversion 
+Learning objectives 
+By the end of this section you should be able to 
+• Explain how the interpreter uses implicit type conversion. 
+• Use explicit type conversion with int(), float(), and str(). 
+Implicit type conversion 
+Common operations update a variable such that the variable's data type needs to be changed. Ex: A GPS first 
+assigns distance with 250, an integer. After a wrong turn, the GPS assigns distance with 252.5, a float. The 
+Python interpreter uses implicit type conversion to automatically convert one data type to another. Once 
+distance is assigned with 252.5, the interpreter will convert distance from an integer to a float without the 
+TRY IT 
+40     2 • Expressions
+Access for free at openstax.org",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-B-1,B,q17,1,openstax-python-2026-ch01-02:p39:6dce983ef12525c59d7f,Introduction_to_Python_Programming-WEB.pdf,39,1,Introduction_to_Python_Programming-WEB.pdf,39,1,"Documentation
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation
+written for others who will use the program but not necessarily read the source code. Most of the official
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings.
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common
+elements of a docstring include a one-line summary, a blank line, and a longer description.
+","c. insert a # at the beginning of the line. 
+Documentation 
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation 
+written for others who will use the program but not necessarily read the source code. Most of the official 
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings. 
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common 
+elements of a docstring include a one-line summary, a blank line, and a longer description. 
+CHECKPOINT 
+Vacations docstring 
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring) 
+CONCEPTS IN PRACTICE 
+Documentation 
+7 . The main purpose of writing docstrings is to . . . 
+a. summarize the program's purpose or usage. 
+b. explain how each part of the code works. 
+c. maintain a list of ideas for new features. 
+8 . Which of the following is NOT a docstring? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. # Vacations Madlib. 
+# 
+# This program asks the user for two adjectives 
+# and two nouns, which are then used to print 
+# a funny story about a vacation. 
+9 . Which docstring is most useful for this program? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. The code 
+uses four variables to store the user input: two for the adjectives, and two 
+for the nouns. The output is displayed on seven lines, beginning with a blank 
+line after the input. """""" 
+1.7 • Comments     29",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-B-2,B,q17,2,openstax-python-2026-ch01-02:p40:c489e3847d0dfa1b7b06,Introduction_to_Python_Programming-WEB.pdf,40,1,Introduction_to_Python_Programming-WEB.pdf,40,1,"Gravity calculation
+Write a docstring for the following program. The first line of the docstring should explain, in one short
+sentence, what the program is. The second line of the docstring should be blank. The third and subsequent
+lines should include a longer explanation of what the program does. At the end of the docstring, add a line
+that says ""Author: "" followed by your name.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments)
+","Whose birthday 
+Add two comments to the following program: one for the input, and one for the output. Separate the input 
+and output with a blank line. Then, compare your comments with the sample solution, and ask yourself the 
+following questions: 
+• Are your comments longer or shorter? Why? 
+• Is the formatting of your comments correct? 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments) 
+Gravity calculation 
+Write a docstring for the following program. The first line of the docstring should explain, in one short 
+sentence, what the program is. The second line of the docstring should be blank. The third and subsequent 
+lines should include a longer explanation of what the program does. At the end of the docstring, add a line 
+that says ""Author: "" followed by your name. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments) 
+1.8 Why Python? 
+Learning objectives 
+By the end of this section you should be able to 
+• Name two historical facts about how Python was first created. 
+• Describe two ways Python is considered a popular language. 
+Historical background 
+Python has an interesting history. In 1982, Guido van Rossum (https://openstax.org/r/100vanRossum), the 
+creator of Python, started working at CWI (https://openstax.org/r/100CWI), a Dutch national research institute. 
+He joined a team that was designing a new programming language, named ABC, for teaching and prototyping. 
+ABC's simplicity was ideal for beginners, but the language lacked features required to write advanced 
+programs. 
+Several years later, van Rossum joined a different team at CWI working on an operating system. The team 
+needed an easier way to write programs for monitoring computers and analyzing data. Languages common in 
+the 1980's were (and still are) difficult to use for these kinds of programs. van Rossum envisioned a new 
+language that would have a simple syntax, like ABC, but also provide advanced features that professionals 
+would need. 
+At first, van Rossum started working on this new language as a hobby during his free time. He named the 
+language Python because he was a fan of the British comedy group Monty Python (https://openstax.org/r/
+100MontyPython). Over the next year, he and his colleagues successfully used Python many times for real 
+work. van Rossum eventually decided to share Python with the broader programming community online. He 
+TRY IT 
+TRY IT 
+30     1 • Statements
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-B-3,B,q17,3,openstax-python-2026-ch01-02:p39:62b69440c8082b9a251e,Introduction_to_Python_Programming-WEB.pdf,39,1,Introduction_to_Python_Programming-WEB.pdf,39,1,"CONCEPTS IN PRACTICE
+Documentation
+7 . The main purpose of writing docstrings is to . . .
+a. summarize the program's purpose or usage.
+b. explain how each part of the code works.
+c. maintain a list of ideas for new features.
+8 . Which of the following is NOT a docstring?
+a. """"""Vacations Madlib.""""""
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two
+nouns, which are then used to print a funny story about a vacation. """"""
+c. # Vacations Madlib.
+#
+# This program asks the user for two adjectives
+# and two nouns, which are then used to print
+# a funny story about a vacation.
+9 . Which docstring is most useful for this program?
+a. """"""Vacations Madlib.""""""
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two
+nouns, which are then used to print a funny story about a vacation. """"""
+","c. insert a # at the beginning of the line. 
+Documentation 
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation 
+written for others who will use the program but not necessarily read the source code. Most of the official 
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings. 
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common 
+elements of a docstring include a one-line summary, a blank line, and a longer description. 
+CHECKPOINT 
+Vacations docstring 
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring) 
+CONCEPTS IN PRACTICE 
+Documentation 
+7 . The main purpose of writing docstrings is to . . . 
+a. summarize the program's purpose or usage. 
+b. explain how each part of the code works. 
+c. maintain a list of ideas for new features. 
+8 . Which of the following is NOT a docstring? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. # Vacations Madlib. 
+# 
+# This program asks the user for two adjectives 
+# and two nouns, which are then used to print 
+# a funny story about a vacation. 
+9 . Which docstring is most useful for this program? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. The code 
+uses four variables to store the user input: two for the adjectives, and two 
+for the nouns. The output is displayed on seven lines, beginning with a blank 
+line after the input. """""" 
+1.7 • Comments     29",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-B-1,B,q18,1,openstax-python-2026-ch01-02:p66:5528985a7f1f8297dc0a,Introduction_to_Python_Programming-WEB.pdf,66,2,Introduction_to_Python_Programming-WEB.pdf,66,2,"Provided input Expected output
+a b c x1 x2
+1 0 -4 2.0 -2.0
+1 2 -3 1.0 -3.0
+2 1 -1 0.5 -1.0
+0 1 1 division by zero
+1 0 1 math domain error
+Table 2.5
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/2-6-the-
+math-module)
+","Provided input Expected output 
+a b c x1 x2 
+1 0 -4 2.0 -2.0 
+1 2 -3 1.0 -3.0 
+2 1 -1 0.5 -1.0 
+0 1 1 division by zero 
+1 0 1 math domain error 
+Table 2.5 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/2-6-the-
+math-module) 
+Cylinder formulas 
+In geometry, the surface area and volume of a right circular cylinder can be computed as follows: 
+Write the code for these two formulas in the program below. Hint: Your solution should use both math.pi 
+and math.tau. Test your program using the following values for r and h: 
+Provided input Expected output 
+r h area volume 
+0 0 0.0 0.0 
+1 1 12.57 3.14 
+1 2 18.85 6.28 
+2.5 4.8 114.67 94.25 
+3.1 7.0 196.73 211.33 
+Table 2.6 
+TRY IT 
+56     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-B-2,B,q18,2,openstax-python-2026-ch01-02:p57:61832f78e534829cee21,Introduction_to_Python_Programming-WEB.pdf,57,2,Introduction_to_Python_Programming-WEB.pdf,57,2,"CONCEPTS IN PRACTICE
+Floating-point errors
+For each situation, which error occurs?
+1 . The statement result = 2.0 * (10.0 ** 500) assigns the variable result with too large of a value.
+a. round-off
+b. overflow
+2 . 0.123456789012345678901234567890 * 0.1 produces 0.012345678901234568430878013601.
+a. round-off
+b. overflow
+Floating point round() function
+Python's round() function is used to round a floating-point number to a given number of decimal places. The
+function requires two arguments. The first argument is the number to be rounded. The second argument
+decides the number of decimal places to which the number is rounded. If the second argument is not
+provided, the number will be rounded to the closest integer. The round() function can be used to mitigate
+floating-point errors.
+Ex:
+• round(2.451, 2) = 2.45
+• round(2.451) = 2
+","Below,  and  can be represented, but  is too large and causes an overflow error. 
+print('3.0 to the power of 256 =', 
+3.0**256) 
+print('3.0 to the power of 512 = ', 
+3.0**512) 
+print('3.0 to the power of 1024 = ', 
+3.0**1024) 
+3.0 to the power of 256 = 
+1.3900845237714473e+122 
+3.0 to the power of 512 = 
+1.9323349832288915e+244 
+3.0 to the power of 1024 = 
+Traceback (most recent call last): 
+  File ""<stdin>"", line 3, in <module> 
+    print('3.0 to the power of 1024 = ', 
+3.0**1024) 
+OverflowError: (34, 'Numerical result out 
+of range') 
+Table 2.2 Overflow error. 
+CONCEPTS IN PRACTICE 
+Floating-point errors 
+For each situation, which error occurs? 
+1 . The statement result = 2.0 * (10.0 ** 500) assigns the variable result with too large of a value. 
+a. round-off 
+b. overflow 
+2 . 0.123456789012345678901234567890 * 0.1 produces 0.012345678901234568430878013601. 
+a. round-off 
+b. overflow 
+Floating point round() function 
+Python's round() function is used to round a floating-point number to a given number of decimal places. The 
+function requires two arguments. The first argument is the number to be rounded. The second argument 
+decides the number of decimal places to which the number is rounded. If the second argument is not 
+provided, the number will be rounded to the closest integer. The round() function can be used to mitigate 
+floating-point errors. 
+Ex: 
+• round(2.451, 2) = 2.45 
+• round(2.451) = 2 
+CHECKPOINT 
+Examples of round() function 
+Examples of a round () function; ch 2, video 7 (https://www.openstax.org/r/round-function) 
+2.4 • Floating-point errors     47",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-B-3,B,q18,3,openstax-python-2026-ch01-02:p50:87a2a2c8d07ba791fe50,Introduction_to_Python_Programming-WEB.pdf,50,2,Introduction_to_Python_Programming-WEB.pdf,50,2,"• abs(5)
+• len(""Yo"")
+• len(""HoHo"")
+• round(9.49)
+• round(9.50)
+Note: These functions (type, str, int, len, and round) will be explored in more detail later in the chapter.
+You can read more about the built-in functions (https://openstax.org/r/100builtin) in the Python
+documentation.
+","• abs(5) 
+• len(""Yo"") 
+• len(""HoHo"") 
+• round(9.49) 
+• round(9.50) 
+Note: These functions (type, str, int, len, and round) will be explored in more detail later in the chapter. 
+You can read more about the built-in functions (https://openstax.org/r/100builtin) in the Python 
+documentation. 
+Correcting mistakes 
+Open a Python shell on your computer, or use the one at python.org/shell (https://openstax.org/r/
+100pythonshell). Run the following two statements in the shell: 
+• x = 123 
+• y = 456 
+Making mistakes is common while typing in a shell. The following lines include typos and other errors. For 
+each line: (1) run the line in a shell to see the result, (2) press the up arrow to repeat the line, and (3) edit 
+the line to get the correct result. 
+• print(""Easy as"", X) 
+• print(""y divided by 2 is"", y / 0) 
+• name = intput(""What is your name? "") 
+• print(name, ""is"", int(name), ""letters long."") 
+• print(""That's all folks!) 
+The expected output, after correcting typos, should look like: 
+• Easy as 123 
+• y divided by 2 is 228.0 
+• (no error/output) 
+• Stacie is 6 letters long. 
+• That's all folks! 
+2.2 Type conversion 
+Learning objectives 
+By the end of this section you should be able to 
+• Explain how the interpreter uses implicit type conversion. 
+• Use explicit type conversion with int(), float(), and str(). 
+Implicit type conversion 
+Common operations update a variable such that the variable's data type needs to be changed. Ex: A GPS first 
+assigns distance with 250, an integer. After a wrong turn, the GPS assigns distance with 252.5, a float. The 
+Python interpreter uses implicit type conversion to automatically convert one data type to another. Once 
+distance is assigned with 252.5, the interpreter will convert distance from an integer to a float without the 
+TRY IT 
+40     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-B-1,B,q19,1,openstax-python-2026-ch01-02:p70:48175104fc77623c8f95,Introduction_to_Python_Programming-WEB.pdf,70,2,Introduction_to_Python_Programming-WEB.pdf,70,2,"a. Hello,Ada
+b. Hello, Ada
+c. SyntaxError
+","a. Hello,Ada 
+b. Hello, Ada 
+c. SyntaxError 
+Multi-line statements 
+Most statements in a Python program need only one line of code. But occasionally longer statements need to 
+span multiple lines. Python provides two ways to write multi-line statements: 
+• Explicit line joining, using \ characters: 
+    decl = ""The unanimous Declaration of the thirteen united States of "" \ 
+            ""America, When in the Course of human events, it becomes "" \ 
+            ""necessary for one people to dissolve the political bands..."" 
+• Implicit line joining, using parentheses: 
+    decl = (""The unanimous Declaration of the thirteen united States of "" 
+            ""America, When in the Course of human events, it becomes "" 
+            ""necessary for one people to dissolve the political bands..."") 
+Implicit line joining is more common, since many statements and expressions use parentheses anyway. PEP 8 
+recommends avoiding the use of explicit line joining whenever possible. 
+CONCEPTS IN PRACTICE 
+Multi-line statements 
+8 . Which character is used for explicit line joining? 
+a. / 
+b. \ 
+c. | 
+9 . What is the best way to print a very long string? 
+a. Break up the string into multiple smaller strings. 
+print(""..."" # first part of string 
+""..."" # next part of string 
+""..."") 
+b. Print the string using multiple print statements. 
+print(""..."") # first part of string 
+print(""..."") # next part of string 
+print(""..."") 
+c. Assign the string to a variable and print the variable. 
+text = ""..."" # the entire string 
+print(text) 
+10 . Which example consists of two statements? 
+a. print(""Happy "" 
+""New Year"") 
+b. saying = (""Happy "" 
+""New Year"") 
+60     2 • Expressions
+Access for free at openstax.org",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-B-2,B,q19,2,openstax-python-2026-ch01-02:p71:e2dc1b5a891afdf15e38,Introduction_to_Python_Programming-WEB.pdf,71,2,Introduction_to_Python_Programming-WEB.pdf,71,2,"4. ""Now, it's my belief that Python is a lot easier than to teach to students
+programming and teach them C or C++ or Java at the same time because all the
+details of the languages are so much harder. Other scripting languages really don't
+work very well there either.""
+5. ""I would guess that the decision to create a small special purpose language or
+use an existing general purpose language is one of the toughest decisions that
+anyone facing the need for a new language must make.""
+Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format
+the code using multi-line statements and escape sequences as necessary.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code)
+TRY IT
+TRY IT","c. saying= ""Happy "" 
+""New Year"" 
+Spaced out 
+The following code works correctly but is formatted poorly. In particular, the code does not include spaces 
+recommended by PEP 8. Furthermore, two of the lines are about 90 characters long. Reformat the code to 
+follow the guidelines in this section. Be careful not to change the behavior of the code itself. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+Five quotes 
+Write a program that prints the following five quotes (source: BrainyQuote (https://openstax.org/r/
+100brainyquote)) from Guido van Rossum, the creator of Python. Your program should have exactly five 
+print statements, one for each quote: 
+1. ""If you're talking about Java in particular, Python is about the best fit you 
+can get amongst all the other languages. Yet the funny thing is, from a language 
+point of view, JavaScript has a lot in common with Python, but it is sort of a 
+restricted subset."" 
+2. ""The second stream of material that is going to come out of this project is a 
+programming environment and a set of programming tools where we really want to 
+focus again on the needs of the newbie. This environment is going to have to be 
+extremely user-friendly."" 
+3. ""I have this hope that there is a better way. Higher-level tools that actually 
+let you see the structure of the software more clearly will be of tremendous 
+value."" 
+4. ""Now, it's my belief that Python is a lot easier than to teach to students 
+programming and teach them C or C++ or Java at the same time because all the 
+details of the languages are so much harder. Other scripting languages really don't 
+work very well there either."" 
+5. ""I would guess that the decision to create a small special purpose language or 
+use an existing general purpose language is one of the toughest decisions that 
+anyone facing the need for a new language must make."" 
+Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format 
+the code using multi-line statements and escape sequences as necessary. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+TRY IT 
+TRY IT 
+2.7 • Formatting code     61",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-B-3,B,q19,3,openstax-python-2026-ch01-02:p38:4ae6c88c5232ca613660,Introduction_to_Python_Programming-WEB.pdf,38,1,Introduction_to_Python_Programming-WEB.pdf,38,1,"c. //
+3 . Which comment is formatted correctly?
+a. 0 spaces:
+#Get the user input
+b. 1 space:
+# Get the user input
+c. 2 spaces:
+#  Get the user input
+","c. // 
+3 . Which comment is formatted correctly? 
+a. 0 spaces: 
+#Get the user input 
+b. 1 space: 
+# Get the user input 
+c. 2 spaces: 
+#  Get the user input 
+Code quality 
+The example program above had two parts: (1) display the menu options, and (2) get the user's preferences. 
+Together, the blank lines and comments show the overall structure of the program. 
+Programmers spend more time reading code than writing code. Therefore, making code easier for others to 
+read and understand is important. Two ways to improve code quality include: 
+• Separate each part (lines that have a similar purpose) with a blank line. 
+• Write a comment before each part. Not every line needs a comment. 
+CHECKPOINT 
+Comments in a program 
+Comments in a program; ch 1, video 12 (https://www.openstax.org/r/comments) 
+CONCEPTS IN PRACTICE 
+Code quality 
+4 . Which comment is most useful for the following code? 
+print(""You said:"", adj1 + "" "" + noun1) 
+a. # Append adj1 and noun1 
+b. # Print out a bunch of stuff 
+c. # Show the resulting phrase 
+5 . Where should a blank line be inserted? 
+1 name = input(""Whose birthday is today? "") 
+2 print(""Happy birthday to"", name) 
+3 print(""Everyone cheer for"", name) 
+a. After line 1 
+b. After line 2 
+c. After line 3 
+6 . To temporarily prevent a line from being run, one might . . . 
+a. introduce a syntax error in the line. 
+b. remove the line from the program. 
+28     1 • Statements
+Access for free at openstax.org",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-B-1,B,q20,1,openstax-python-2026-ch01-02:p72:3b6a797ddf6f3e7e26fa,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"Field Example use of Python
+Business An accountant writes a Python program to generate custom sales reports.
+Education A teacher writes a Python program to organize homework submissions.
+Fine arts An artist writes a Python program to operate an interactive art display.
+Humanities A linguist writes a Python program to analyze changes in slang word usage.
+Science A biologist writes a Python program to analyze DNA sequences for cancer.
+Table 2.8 Python outside of CS and IT.
+","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-B-2,B,q20,2,openstax-python-2026-ch01-02:p72:1ad0cd9974dba81452c7,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"2.8 Python careers
+Learning objectives
+By the end of this section you should be able to
+• Summarize how Python is used in fields other than CS and IT.
+• Describe two different kinds of applications made with Python.
+","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-B-3,B,q20,3,openstax-python-2026-ch01-02:p72:b8fd8b01f49080fd2019,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"Fields and applications
+Learning Python opens the door to many programming-related careers. Example job titles include software
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields
+and careers.
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to
+program is a useful skill that can enhance any career.
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language
+to learn. A supportive community of professionals and enthusiasts is ready to help.
+","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q16-C-1,C,q16,1,openstax-python-2026-ch01-02:p33:b3b15c6047669d1aae65,Introduction_to_Python_Programming-WEB.pdf,33,1,Introduction_to_Python_Programming-WEB.pdf,33,1,"b. 2
+c. 3
+","b. 2 
+c. 3 
+Values and types 
+Write a Python computer program that: 
+1. Defines an integer variable named 'int_a' and assigns 'int_a' with the value 10. 
+2. Defines a floating-point variable named 'float_a' and assigns 'float_a' with the value 10.0. 
+3. Defines a string variable named 'string_a' and assigns 'string_a' with the string value ""10"". 
+4. Prints the value of each of the three variables along with their type. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-5-number-basics) 
+Meters to feet 
+Write a Python computer program that: 
+1. Assigns the integer value 10 to a variable, meters. 
+2. Assigns the floating-point value 3.28 to a variable, meter2feet. 
+3. Calculates 10 meters in feet by multiplying meter by meter2feet. Store the result in a variable, feet. 
+4. Prints the content of variable feet in the output. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-5-number-basics) 
+1.6 Error messages 
+Learning objectives 
+By the end of this section you should be able to 
+• Identify the error type and line number in error messages. 
+• Correct syntax errors, name errors, and indentation errors. 
+How to read errors 
+A natural part of programming is making mistakes. Even experienced programmers make mistakes when 
+writing code. Errors may result when mistakes are made when writing code. The computer requires very 
+specific instructions telling the computer what to do. If the instructions are not clear, then the computer does 
+not know what to do and gives back an error. 
+When an error occurs, Python displays a message with the following information: 
+1. The line number of the error. 
+2. The type of error (Ex: SyntaxError). 
+3. Additional details about the error. 
+TRY IT 
+TRY IT 
+1.6 • Error messages     23",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q16-C-2,C,q16,2,openstax-python-2026-ch01-02:p26:85fc4edcbefc4a457fb8,Introduction_to_Python_Programming-WEB.pdf,26,1,Introduction_to_Python_Programming-WEB.pdf,26,1,"1.4 String basics
+Learning objectives
+By the end of this section you should be able to
+• Use the built-in len() function to get a string's length.
+• Concatenate string literals and variables using the + operator.
+","c. zip_code 
+8 . Given the variable name, DogBreed, which improvement conforms to Python's style guide? 
+a. dog_breed 
+b. dogBreed 
+c. dog-breed 
+Final score 
+Write a Python computer program that: 
+• Creates a variable, team1, assigned with the value ""Liverpool"". 
+• Creates a variable, team2, assigned with the value ""Chelsea"". 
+• Creates a variable score1, assigned with the value 4. 
+• Creates a variable, score2, assigned with the value 3. 
+• Prints team1, ""versus"", and team2 as a single line of output. 
+• Prints ""Final score: "", score1, ""to"", score2 as a single line of output. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-3-variables) 
+1.4 String basics 
+Learning objectives 
+By the end of this section you should be able to 
+• Use the built-in len() function to get a string's length. 
+• Concatenate string literals and variables using the + operator. 
+Quote marks 
+A string is a sequence of characters enclosed by matching single (') or double ("") quotes. Ex: ""Happy 
+birthday!"" and '21' are both strings. 
+To include a single quote (') in a string, enclose the string with matching double quotes (""). Ex: ""Won't this 
+work?"" To include a double quote (""), enclose the string with matching single quotes ('). Ex: 'They said ""Try 
+it!"", so I did'. 
+Valid string Invalid string 
+""17"" or '17' 17 
+""seventeen"" or 'seventeen' seventeen 
+""Where?"" or 'Where?' ""Where?' 
+Table 1.3 Rules for strings. 
+TRY IT 
+16     1 • Statements
+Access for free at openstax.org",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q16-C-3,C,q16,3,openstax-python-2026-ch01-02:p39:c123fed64222be16f892,Introduction_to_Python_Programming-WEB.pdf,39,1,Introduction_to_Python_Programming-WEB.pdf,39,1,"CHECKPOINT
+Vacations docstring
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring)
+","c. insert a # at the beginning of the line. 
+Documentation 
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation 
+written for others who will use the program but not necessarily read the source code. Most of the official 
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings. 
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common 
+elements of a docstring include a one-line summary, a blank line, and a longer description. 
+CHECKPOINT 
+Vacations docstring 
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring) 
+CONCEPTS IN PRACTICE 
+Documentation 
+7 . The main purpose of writing docstrings is to . . . 
+a. summarize the program's purpose or usage. 
+b. explain how each part of the code works. 
+c. maintain a list of ideas for new features. 
+8 . Which of the following is NOT a docstring? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. # Vacations Madlib. 
+# 
+# This program asks the user for two adjectives 
+# and two nouns, which are then used to print 
+# a funny story about a vacation. 
+9 . Which docstring is most useful for this program? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. The code 
+uses four variables to store the user input: two for the adjectives, and two 
+for the nouns. The output is displayed on seven lines, beginning with a blank 
+line after the input. """""" 
+1.7 • Comments     29",1,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-C-1,C,q17,1,openstax-python-2026-ch01-02:p39:6dce983ef12525c59d7f,Introduction_to_Python_Programming-WEB.pdf,39,1,Introduction_to_Python_Programming-WEB.pdf,39,1,"Documentation
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation
+written for others who will use the program but not necessarily read the source code. Most of the official
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings.
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common
+elements of a docstring include a one-line summary, a blank line, and a longer description.
+","c. insert a # at the beginning of the line. 
+Documentation 
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation 
+written for others who will use the program but not necessarily read the source code. Most of the official 
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings. 
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common 
+elements of a docstring include a one-line summary, a blank line, and a longer description. 
+CHECKPOINT 
+Vacations docstring 
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring) 
+CONCEPTS IN PRACTICE 
+Documentation 
+7 . The main purpose of writing docstrings is to . . . 
+a. summarize the program's purpose or usage. 
+b. explain how each part of the code works. 
+c. maintain a list of ideas for new features. 
+8 . Which of the following is NOT a docstring? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. # Vacations Madlib. 
+# 
+# This program asks the user for two adjectives 
+# and two nouns, which are then used to print 
+# a funny story about a vacation. 
+9 . Which docstring is most useful for this program? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. The code 
+uses four variables to store the user input: two for the adjectives, and two 
+for the nouns. The output is displayed on seven lines, beginning with a blank 
+line after the input. """""" 
+1.7 • Comments     29",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-C-2,C,q17,2,openstax-python-2026-ch01-02:p40:c489e3847d0dfa1b7b06,Introduction_to_Python_Programming-WEB.pdf,40,1,Introduction_to_Python_Programming-WEB.pdf,40,1,"Gravity calculation
+Write a docstring for the following program. The first line of the docstring should explain, in one short
+sentence, what the program is. The second line of the docstring should be blank. The third and subsequent
+lines should include a longer explanation of what the program does. At the end of the docstring, add a line
+that says ""Author: "" followed by your name.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments)
+","Whose birthday 
+Add two comments to the following program: one for the input, and one for the output. Separate the input 
+and output with a blank line. Then, compare your comments with the sample solution, and ask yourself the 
+following questions: 
+• Are your comments longer or shorter? Why? 
+• Is the formatting of your comments correct? 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments) 
+Gravity calculation 
+Write a docstring for the following program. The first line of the docstring should explain, in one short 
+sentence, what the program is. The second line of the docstring should be blank. The third and subsequent 
+lines should include a longer explanation of what the program does. At the end of the docstring, add a line 
+that says ""Author: "" followed by your name. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+1-7-comments) 
+1.8 Why Python? 
+Learning objectives 
+By the end of this section you should be able to 
+• Name two historical facts about how Python was first created. 
+• Describe two ways Python is considered a popular language. 
+Historical background 
+Python has an interesting history. In 1982, Guido van Rossum (https://openstax.org/r/100vanRossum), the 
+creator of Python, started working at CWI (https://openstax.org/r/100CWI), a Dutch national research institute. 
+He joined a team that was designing a new programming language, named ABC, for teaching and prototyping. 
+ABC's simplicity was ideal for beginners, but the language lacked features required to write advanced 
+programs. 
+Several years later, van Rossum joined a different team at CWI working on an operating system. The team 
+needed an easier way to write programs for monitoring computers and analyzing data. Languages common in 
+the 1980's were (and still are) difficult to use for these kinds of programs. van Rossum envisioned a new 
+language that would have a simple syntax, like ABC, but also provide advanced features that professionals 
+would need. 
+At first, van Rossum started working on this new language as a hobby during his free time. He named the 
+language Python because he was a fan of the British comedy group Monty Python (https://openstax.org/r/
+100MontyPython). Over the next year, he and his colleagues successfully used Python many times for real 
+work. van Rossum eventually decided to share Python with the broader programming community online. He 
+TRY IT 
+TRY IT 
+30     1 • Statements
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q17-C-3,C,q17,3,openstax-python-2026-ch01-02:p39:62b69440c8082b9a251e,Introduction_to_Python_Programming-WEB.pdf,39,1,Introduction_to_Python_Programming-WEB.pdf,39,1,"CONCEPTS IN PRACTICE
+Documentation
+7 . The main purpose of writing docstrings is to . . .
+a. summarize the program's purpose or usage.
+b. explain how each part of the code works.
+c. maintain a list of ideas for new features.
+8 . Which of the following is NOT a docstring?
+a. """"""Vacations Madlib.""""""
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two
+nouns, which are then used to print a funny story about a vacation. """"""
+c. # Vacations Madlib.
+#
+# This program asks the user for two adjectives
+# and two nouns, which are then used to print
+# a funny story about a vacation.
+9 . Which docstring is most useful for this program?
+a. """"""Vacations Madlib.""""""
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two
+nouns, which are then used to print a funny story about a vacation. """"""
+","c. insert a # at the beginning of the line. 
+Documentation 
+Python programs may optionally begin with a string known as a docstring. A docstring is documentation 
+written for others who will use the program but not necessarily read the source code. Most of the official 
+documentation at docs.python.org (https://openstax.org/r/100docstrings) is generated from docstrings. 
+Documentation can be long, so docstrings are generally written as multi-line strings (""""""). Common 
+elements of a docstring include a one-line summary, a blank line, and a longer description. 
+CHECKPOINT 
+Vacations docstring 
+Vacations docstring; ch 1, video 13 (https://www.openstax.org/r/docstring) 
+CONCEPTS IN PRACTICE 
+Documentation 
+7 . The main purpose of writing docstrings is to . . . 
+a. summarize the program's purpose or usage. 
+b. explain how each part of the code works. 
+c. maintain a list of ideas for new features. 
+8 . Which of the following is NOT a docstring? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. # Vacations Madlib. 
+# 
+# This program asks the user for two adjectives 
+# and two nouns, which are then used to print 
+# a funny story about a vacation. 
+9 . Which docstring is most useful for this program? 
+a. """"""Vacations Madlib."""""" 
+b. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. """""" 
+c. """"""Vacations Madlib. This program asks the user for two adjectives and two 
+nouns, which are then used to print a funny story about a vacation. The code 
+uses four variables to store the user input: two for the adjectives, and two 
+for the nouns. The output is displayed on seven lines, beginning with a blank 
+line after the input. """""" 
+1.7 • Comments     29",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-C-1,C,q18,1,openstax-python-2026-ch01-02:p66:5528985a7f1f8297dc0a,Introduction_to_Python_Programming-WEB.pdf,66,2,Introduction_to_Python_Programming-WEB.pdf,66,2,"Provided input Expected output
+a b c x1 x2
+1 0 -4 2.0 -2.0
+1 2 -3 1.0 -3.0
+2 1 -1 0.5 -1.0
+0 1 1 division by zero
+1 0 1 math domain error
+Table 2.5
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/2-6-the-
+math-module)
+","Provided input Expected output 
+a b c x1 x2 
+1 0 -4 2.0 -2.0 
+1 2 -3 1.0 -3.0 
+2 1 -1 0.5 -1.0 
+0 1 1 division by zero 
+1 0 1 math domain error 
+Table 2.5 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/2-6-the-
+math-module) 
+Cylinder formulas 
+In geometry, the surface area and volume of a right circular cylinder can be computed as follows: 
+Write the code for these two formulas in the program below. Hint: Your solution should use both math.pi 
+and math.tau. Test your program using the following values for r and h: 
+Provided input Expected output 
+r h area volume 
+0 0 0.0 0.0 
+1 1 12.57 3.14 
+1 2 18.85 6.28 
+2.5 4.8 114.67 94.25 
+3.1 7.0 196.73 211.33 
+Table 2.6 
+TRY IT 
+56     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-C-2,C,q18,2,openstax-python-2026-ch01-02:p57:61832f78e534829cee21,Introduction_to_Python_Programming-WEB.pdf,57,2,Introduction_to_Python_Programming-WEB.pdf,57,2,"CONCEPTS IN PRACTICE
+Floating-point errors
+For each situation, which error occurs?
+1 . The statement result = 2.0 * (10.0 ** 500) assigns the variable result with too large of a value.
+a. round-off
+b. overflow
+2 . 0.123456789012345678901234567890 * 0.1 produces 0.012345678901234568430878013601.
+a. round-off
+b. overflow
+Floating point round() function
+Python's round() function is used to round a floating-point number to a given number of decimal places. The
+function requires two arguments. The first argument is the number to be rounded. The second argument
+decides the number of decimal places to which the number is rounded. If the second argument is not
+provided, the number will be rounded to the closest integer. The round() function can be used to mitigate
+floating-point errors.
+Ex:
+• round(2.451, 2) = 2.45
+• round(2.451) = 2
+","Below,  and  can be represented, but  is too large and causes an overflow error. 
+print('3.0 to the power of 256 =', 
+3.0**256) 
+print('3.0 to the power of 512 = ', 
+3.0**512) 
+print('3.0 to the power of 1024 = ', 
+3.0**1024) 
+3.0 to the power of 256 = 
+1.3900845237714473e+122 
+3.0 to the power of 512 = 
+1.9323349832288915e+244 
+3.0 to the power of 1024 = 
+Traceback (most recent call last): 
+  File ""<stdin>"", line 3, in <module> 
+    print('3.0 to the power of 1024 = ', 
+3.0**1024) 
+OverflowError: (34, 'Numerical result out 
+of range') 
+Table 2.2 Overflow error. 
+CONCEPTS IN PRACTICE 
+Floating-point errors 
+For each situation, which error occurs? 
+1 . The statement result = 2.0 * (10.0 ** 500) assigns the variable result with too large of a value. 
+a. round-off 
+b. overflow 
+2 . 0.123456789012345678901234567890 * 0.1 produces 0.012345678901234568430878013601. 
+a. round-off 
+b. overflow 
+Floating point round() function 
+Python's round() function is used to round a floating-point number to a given number of decimal places. The 
+function requires two arguments. The first argument is the number to be rounded. The second argument 
+decides the number of decimal places to which the number is rounded. If the second argument is not 
+provided, the number will be rounded to the closest integer. The round() function can be used to mitigate 
+floating-point errors. 
+Ex: 
+• round(2.451, 2) = 2.45 
+• round(2.451) = 2 
+CHECKPOINT 
+Examples of round() function 
+Examples of a round () function; ch 2, video 7 (https://www.openstax.org/r/round-function) 
+2.4 • Floating-point errors     47",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q18-C-3,C,q18,3,openstax-python-2026-ch01-02:p50:87a2a2c8d07ba791fe50,Introduction_to_Python_Programming-WEB.pdf,50,2,Introduction_to_Python_Programming-WEB.pdf,50,2,"• abs(5)
+• len(""Yo"")
+• len(""HoHo"")
+• round(9.49)
+• round(9.50)
+Note: These functions (type, str, int, len, and round) will be explored in more detail later in the chapter.
+You can read more about the built-in functions (https://openstax.org/r/100builtin) in the Python
+documentation.
+","• abs(5) 
+• len(""Yo"") 
+• len(""HoHo"") 
+• round(9.49) 
+• round(9.50) 
+Note: These functions (type, str, int, len, and round) will be explored in more detail later in the chapter. 
+You can read more about the built-in functions (https://openstax.org/r/100builtin) in the Python 
+documentation. 
+Correcting mistakes 
+Open a Python shell on your computer, or use the one at python.org/shell (https://openstax.org/r/
+100pythonshell). Run the following two statements in the shell: 
+• x = 123 
+• y = 456 
+Making mistakes is common while typing in a shell. The following lines include typos and other errors. For 
+each line: (1) run the line in a shell to see the result, (2) press the up arrow to repeat the line, and (3) edit 
+the line to get the correct result. 
+• print(""Easy as"", X) 
+• print(""y divided by 2 is"", y / 0) 
+• name = intput(""What is your name? "") 
+• print(name, ""is"", int(name), ""letters long."") 
+• print(""That's all folks!) 
+The expected output, after correcting typos, should look like: 
+• Easy as 123 
+• y divided by 2 is 228.0 
+• (no error/output) 
+• Stacie is 6 letters long. 
+• That's all folks! 
+2.2 Type conversion 
+Learning objectives 
+By the end of this section you should be able to 
+• Explain how the interpreter uses implicit type conversion. 
+• Use explicit type conversion with int(), float(), and str(). 
+Implicit type conversion 
+Common operations update a variable such that the variable's data type needs to be changed. Ex: A GPS first 
+assigns distance with 250, an integer. After a wrong turn, the GPS assigns distance with 252.5, a float. The 
+Python interpreter uses implicit type conversion to automatically convert one data type to another. Once 
+distance is assigned with 252.5, the interpreter will convert distance from an integer to a float without the 
+TRY IT 
+40     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-C-1,C,q19,1,openstax-python-2026-ch01-02:p70:48175104fc77623c8f95,Introduction_to_Python_Programming-WEB.pdf,70,2,Introduction_to_Python_Programming-WEB.pdf,70,2,"a. Hello,Ada
+b. Hello, Ada
+c. SyntaxError
+","a. Hello,Ada 
+b. Hello, Ada 
+c. SyntaxError 
+Multi-line statements 
+Most statements in a Python program need only one line of code. But occasionally longer statements need to 
+span multiple lines. Python provides two ways to write multi-line statements: 
+• Explicit line joining, using \ characters: 
+    decl = ""The unanimous Declaration of the thirteen united States of "" \ 
+            ""America, When in the Course of human events, it becomes "" \ 
+            ""necessary for one people to dissolve the political bands..."" 
+• Implicit line joining, using parentheses: 
+    decl = (""The unanimous Declaration of the thirteen united States of "" 
+            ""America, When in the Course of human events, it becomes "" 
+            ""necessary for one people to dissolve the political bands..."") 
+Implicit line joining is more common, since many statements and expressions use parentheses anyway. PEP 8 
+recommends avoiding the use of explicit line joining whenever possible. 
+CONCEPTS IN PRACTICE 
+Multi-line statements 
+8 . Which character is used for explicit line joining? 
+a. / 
+b. \ 
+c. | 
+9 . What is the best way to print a very long string? 
+a. Break up the string into multiple smaller strings. 
+print(""..."" # first part of string 
+""..."" # next part of string 
+""..."") 
+b. Print the string using multiple print statements. 
+print(""..."") # first part of string 
+print(""..."") # next part of string 
+print(""..."") 
+c. Assign the string to a variable and print the variable. 
+text = ""..."" # the entire string 
+print(text) 
+10 . Which example consists of two statements? 
+a. print(""Happy "" 
+""New Year"") 
+b. saying = (""Happy "" 
+""New Year"") 
+60     2 • Expressions
+Access for free at openstax.org",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-C-2,C,q19,2,openstax-python-2026-ch01-02:p71:e2dc1b5a891afdf15e38,Introduction_to_Python_Programming-WEB.pdf,71,2,Introduction_to_Python_Programming-WEB.pdf,71,2,"4. ""Now, it's my belief that Python is a lot easier than to teach to students
+programming and teach them C or C++ or Java at the same time because all the
+details of the languages are so much harder. Other scripting languages really don't
+work very well there either.""
+5. ""I would guess that the decision to create a small special purpose language or
+use an existing general purpose language is one of the toughest decisions that
+anyone facing the need for a new language must make.""
+Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format
+the code using multi-line statements and escape sequences as necessary.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code)
+TRY IT
+TRY IT","c. saying= ""Happy "" 
+""New Year"" 
+Spaced out 
+The following code works correctly but is formatted poorly. In particular, the code does not include spaces 
+recommended by PEP 8. Furthermore, two of the lines are about 90 characters long. Reformat the code to 
+follow the guidelines in this section. Be careful not to change the behavior of the code itself. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+Five quotes 
+Write a program that prints the following five quotes (source: BrainyQuote (https://openstax.org/r/
+100brainyquote)) from Guido van Rossum, the creator of Python. Your program should have exactly five 
+print statements, one for each quote: 
+1. ""If you're talking about Java in particular, Python is about the best fit you 
+can get amongst all the other languages. Yet the funny thing is, from a language 
+point of view, JavaScript has a lot in common with Python, but it is sort of a 
+restricted subset."" 
+2. ""The second stream of material that is going to come out of this project is a 
+programming environment and a set of programming tools where we really want to 
+focus again on the needs of the newbie. This environment is going to have to be 
+extremely user-friendly."" 
+3. ""I have this hope that there is a better way. Higher-level tools that actually 
+let you see the structure of the software more clearly will be of tremendous 
+value."" 
+4. ""Now, it's my belief that Python is a lot easier than to teach to students 
+programming and teach them C or C++ or Java at the same time because all the 
+details of the languages are so much harder. Other scripting languages really don't 
+work very well there either."" 
+5. ""I would guess that the decision to create a small special purpose language or 
+use an existing general purpose language is one of the toughest decisions that 
+anyone facing the need for a new language must make."" 
+Notice that all of these lines are longer than 80 characters, and some contain single quote marks. Format 
+the code using multi-line statements and escape sequences as necessary. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+2-7-formatting-code) 
+TRY IT 
+TRY IT 
+2.7 • Formatting code     61",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q19-C-3,C,q19,3,openstax-python-2026-ch01-02:p67:66fae06e075335cf7e61,Introduction_to_Python_Programming-WEB.pdf,67,2,Introduction_to_Python_Programming-WEB.pdf,67,2,"2.7 Formatting code
+Learning objectives
+By the end of this section you should be able to
+• Identify good spacing for expressions and statements.
+• Write multi-line statements using implicit line joining.
+","If you get an error, try to look up what that error means. 
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/2-6-the-
+math-module) 
+2.7 Formatting code 
+Learning objectives 
+By the end of this section you should be able to 
+• Identify good spacing for expressions and statements. 
+• Write multi-line statements using implicit line joining. 
+Recommended spacing 
+Most spaces in Python code are ignored when running programs; however, spaces at the start of a line are very 
+important. The following two programs are equivalent: 
+• Good spacing: 
+    name = input(""Enter someone's name: "") 
+    place = input(""Enter a famous place: "") 
+    print(name, ""should visit"", place + ""!"") 
+• Poor spacing: 
+    name=input (""Enter someone's name: "" ) 
+    place =input(""Enter a famous place: "") 
+    print( name,""should visit"" , place+ ""!"") 
+One might argue that missing or extra spaces do not matter. After all, the two programs above run exactly the 
+same way. However, the ""poor spacing"" version is more difficult to read. Code like name=input and place+ 
+might lead to confusion. 
+Good programmers write code that is as easy to read as possible. That way, other programmers are more 
+likely to understand the code. To encourage consistency, the Python community has a set of guidelines about 
+where to put spaces and blank lines, what to name variables, how to break up long lines, and other important 
+topics. 
+PYTHON STYLE GUIDE 
+PEP 8 (https://openstax.org/r/100PEP8) is the official style guide for Python. PEP stands for Python 
+Enhancement Proposal. Members of the Python community write PEPs to document best practices and 
+propose new features. The table below is based on guidelines from PEP 8 under the heading Whitespace in 
+Expressions and Statements (https://openstax.org/r/100whitespace). 
+2.7 • Formatting code     57",2,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-C-1,C,q20,1,openstax-python-2026-ch01-02:p72:3b6a797ddf6f3e7e26fa,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"Field Example use of Python
+Business An accountant writes a Python program to generate custom sales reports.
+Education A teacher writes a Python program to organize homework submissions.
+Fine arts An artist writes a Python program to operate an interactive art display.
+Humanities A linguist writes a Python program to analyze changes in slang word usage.
+Science A biologist writes a Python program to analyze DNA sequences for cancer.
+Table 2.8 Python outside of CS and IT.
+","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-C-2,C,q20,2,openstax-python-2026-ch01-02:p72:1ad0cd9974dba81452c7,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"2.8 Python careers
+Learning objectives
+By the end of this section you should be able to
+• Summarize how Python is used in fields other than CS and IT.
+• Describe two different kinds of applications made with Python.
+","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
+meta-q20-C-3,C,q20,3,openstax-python-2026-ch01-02:p72:b8fd8b01f49080fd2019,Introduction_to_Python_Programming-WEB.pdf,72,2,Introduction_to_Python_Programming-WEB.pdf,72,2,"Fields and applications
+Learning Python opens the door to many programming-related careers. Example job titles include software
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields
+and careers.
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to
+program is a useful skill that can enhance any career.
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language
+to learn. A supportive community of professionals and enthusiasts is ready to help.
+","2.8 Python careers 
+Learning objectives 
+By the end of this section you should be able to 
+• Summarize how Python is used in fields other than CS and IT. 
+• Describe two different kinds of applications made with Python. 
+Fields and applications 
+Learning Python opens the door to many programming-related careers. Example job titles include software 
+engineer, data scientist, web developer, and systems analyst. These jobs often require a degree in computer 
+science (CS), information technology (IT), or a related field. However, programming is not limited to these fields 
+and careers. 
+Many professionals use Python to support the work they do. Python programs can automate tasks and solve 
+problems quickly. Table 2.8 shows a few examples of Python outside of computing fields. Knowing how to 
+program is a useful skill that can enhance any career. 
+Python is a versatile language that supports many kinds of applications. Table 2.9 shows a few examples of 
+programs that can be written in Python. Given Python's usefulness and popularity, Python is a great language 
+to learn. A supportive community of professionals and enthusiasts is ready to help. 
+Field Example use of Python 
+Business An accountant writes a Python program to generate custom sales reports. 
+Education A teacher writes a Python program to organize homework submissions. 
+Fine arts An artist writes a Python program to operate an interactive art display. 
+Humanities A linguist writes a Python program to analyze changes in slang word usage. 
+Science A biologist writes a Python program to analyze DNA sequences for cancer. 
+Table 2.8 Python outside of CS and IT. 
+Application Example use of Python 
+Artificial 
+intelligence 
+An engineer develops models to support image and voice recognition. Ex: TensorFlow 
+library (https://openstax.org/r/100tensorflow). 
+Data 
+visualization 
+A statistician creates charts to make sense of large amounts of data. Ex: Matplotlib library 
+(https://openstax.org/r/100matplotlib). 
+General 
+purpose 
+Most programs in this book are general. Ex: Read inputs, perform calculations, print 
+results. 
+Table 2.9 Applications built with Python. 
+62     2 • Expressions
+Access for free at openstax.org",,True,True,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,Ngô Văn Tuân,Access for free at openstax.org.,CC BY-NC-SA 4.0,openstax-python-2026-ch01-02,openstax-python-2026-ch01-02,1,Source/page/chapter match the frozen chunk and PDF bookmarks; chunk text is present on the PDF page.,automatic source/PDF checks,2A202603630,user_reviewed_and_confirmed_proposals,2026-11-13T11:57:06.800340+00:00
